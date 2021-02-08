@@ -1,0 +1,387 @@
+/* Hiker's Guide CSS*/
+/*Body Block
+==================================================
+==================================================*/
+body {
+  background: url('/images/pattern28.png');
+  font: 1em 'Program OT Book', Georgia, serif;
+  background-color: #292828;
+}
+p {
+  color: lemonchiffon;
+  font: 12px Program OT Book;
+}
+
+p strong {
+  color: lemonchiffon;
+  font: 13px Program OT Book;
+}
+h6 {
+  color: #eeeeee;
+  font: 14 Program OT Black;
+}
+h5 {
+  color: #8a7300;
+  font: 20 Program OT Black;
+}
+/*h4 {
+      color: lemonchiffon;
+      font: 24px Program OT Book;
+  }
+  h3{
+      color: #CCCCCC;
+      font: 28px Georgia;
+  }
+  h3 strong{
+      color: #CCCCCC;
+      font: 30px Georgia;
+  }*/
+h2 {
+  color: lemonchiffon;
+  font: 35px Program OT Bold;
+}
+h1 {
+  color: #eeeeee;
+  font: 50 Program OT Black;
+}
+
+/* Header Block*/
+/*==================================================
+================================================== */
+.main {
+  position: absolute;
+  margin: -2% 0% 0% -2%;
+}
+#header {
+  /* border: 1px solid pink; */
+  position: relative;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+#header h6 {
+  display: table-cell;
+}
+
+.logo {
+  width: 30%;
+}
+.a {
+  /*  border: 1px solid green; */
+  padding: 3%;
+  width: 40%;
+  margin: -15% 5%;
+}
+
+#navigation {
+  /*   border: 1px solid red; */
+  position: relative;
+  width: 100%;
+}
+#search {
+  margin: 0% 0% 3% 0%;
+  width: 100%;
+  border: 1px solid dimgrey;
+}
+#search img {
+  width: 15px;
+  height: 15px;
+}
+.searchbox {
+  width: 90%;
+  height: 40px;
+  margin-left: 5px;
+  background-color: transparent;
+  border: none;
+}
+.box {
+  /*   border: 1px solid blue; */
+  position: relative;
+  color: #eeeeee;
+  background-color: transparent;
+  list-style-type: none;
+  padding: 0;
+  margin: 0% -7%;
+}
+.links {
+  margin-top: 5%;
+}
+
+input,
+select,
+option,
+Form {
+  color: #eeeeee;
+}
+a:link {
+  color: #f0ae35;
+  text-decoration: none;
+  padding: 30px;
+}
+a:visited {
+  color: #111111;
+}
+
+/*  Home Posts & View More Btn, Blog Article Block 2, Event listings
+/*==================================================
+================================================== */
+#posts {
+  /* border: 1px solid white; */
+  position: relative;
+  justify-content: center;
+  margin-top: 75%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#posts article,
+#aLevel2 article {
+  width: 380px;
+  height: 380px;
+  float: left;
+  color: lemonchiffon;
+}
+#posts article img,
+#aLevel2 article img {
+  width: 330px;
+  height: 330px;
+  border: 15px solid #292828;
+}
+#posts article h3 {
+  margin: -300px 0px 0px 0px;
+}
+#posts article p {
+  margin: 0px 0px -15px 0px;
+  padding: 0px 2% 15px 25px;
+}
+#posts dd {
+  padding-left: 0.2px;
+}
+#posts h2,
+#aLevel3 h2 {
+  font-size: 30px;
+  padding: 2% 0px 5px 0px;
+  color: #f0ae35;
+}
+#posts h3,
+#aLevel2 h3 {
+  padding: 0px 8% 0px 8%;
+  font-size: 28px;
+  color: lemonchiffon;
+}
+#posts p,
+#aLevel2 p {
+  padding: 0px 8% 0px 8%;
+  margin: -200px 0px 0px 30px;
+  font-size: 20px;
+}
+#posts dd {
+  float: left;
+  margin: 10px 0px 0px 8%;
+  padding-right: 15px;
+  font-size: 14px;
+  color: #8a7300;
+}
+
+/*Home: view more buttons*/
+span .seeMore {
+  width: 90px;
+  height: 30px;
+  float: left;
+  margin: 155px 0px 0px 24px;
+  background-color: #f0ae35;
+  color: dimgrey;
+  font-size: 16px;
+  border-color: lemonchiffon;
+  border: none;
+}
+
+span .more {
+  width: 100px;
+  height: 50px;
+
+  position: relative;
+  margin: 50px 0px 0px 33%;
+
+  background-color: transparent;
+  color: #f0ae35;
+  font-size: 16px;
+  border-color: dimgrey;
+}
+
+/* Home: join & sign Block 3*/
+/*==================================================
+================================================== */
+#join {
+  position: relative;
+  width: 110%;
+  height: 375px;
+  margin: 15% -2%;
+  background-color: #f0ae35;
+}
+#join img {
+  width: 1200px;
+  height: 375px;
+  margin: 0% -15%;
+}
+#join section {
+  /* border: 1px solid red; */
+  position: relative;
+  padding: 4%;
+  width: 90%;
+  margin: -95% 0%;
+  text-align: left;
+  color: #eeeeee;
+}
+
+/*sign up*/
+#sign {
+  /* border: 1px solid aqua; */
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: -10% 0% 10% 0%;
+  padding: 0;
+  background-color: #292828;
+}
+#sign section {
+  /*   border: 1px solid yellow; */
+  text-align: center;
+  color: #888888;
+  margin: auto;
+}
+/*#sign section div {
+  border: 1px solid red; 
+}*/
+#sign section .button {
+  background: url(/images/right.png) no-repeat;
+  border: none;
+  margin: 1% 0% 15% 0%;
+}
+
+/* popop form  */
+#mailingList {
+  display: none;
+}
+#mailingList input,
+select,
+option {
+  color: white;
+}
+
+/* Home: Upcoming Events*/
+/*==================================================
+================================================== */
+#UpcomingEvents {
+  /* border: 1px solid white; */
+  position: relative;
+  display: block;
+  color: #888888;
+  margin: auto;
+}
+
+#mEvents,
+#members,
+#about {
+  /* border: 1px solid red; */
+  margin-bottom: 15%;
+}
+#UpcomingEvents #mEvents div,
+#UpcomingEvents #members div,
+#UpcomingEvents #about div {
+  /* border: 1px solid purple; */
+  width: 90%;
+  margin: auto;
+}
+#UpcomingEvents #mEvents img {
+  width: 12%;
+  height: auto;
+}
+
+#UpcomingEvents #mEvents p {
+  display: table-cell;
+  margin-top: 1%;
+}
+
+#UpcomingEvents #members img {
+  display: table-cell;
+  width: 100%;
+  height: auto;
+}
+#UpcomingEvents #members p strong {
+  color: #f0ae35;
+  font-size: 15px;
+  margin-top: 25px;
+}
+#UpcomingEvents #members p {
+  margin: 1% 0% 10% 0%;
+}
+
+/* FOOTER*
+/ *===================================================
+================================================== */
+footer {
+  text-align: center;
+  color: #eeeeee;
+  clear: both;
+}
+
+footer h3 {
+  font-weight: bolder;
+  color: #eeeeee;
+}
+
+#footer {
+  margin-top: 10%;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 150px;
+  font-size: 13px;
+}
+#footer div {
+  display: table-cell;
+  height: 150px;
+}
+
+#support,
+#signUp {
+  border: 1px solid dimgrey;
+  background-color: #292828;
+  color: #eeeeee;
+  margin-top: 10%;
+}
+#support a {
+  text-decoration: none;
+  padding: 0px 6% 0px 6%;
+  color: #eeeeee;
+}
+
+#signUp .srch {
+  height: 36px;
+  width: 400px;
+  background-color: transparent;
+  border: none;
+  color: #eeeeee;
+}
+#signUp .submit {
+  height: 36px;
+  width: 75px;
+  background-color: transparent;
+  border: none;
+  color: #eeeeee;
+}
+#signUp Form {
+  border: 1px solid dimgrey;
+  margin: 0.5% 0px 0px 20%;
+}
+
+#followUs {
+  border: 1px solid dimgrey;
+  background-color: #292828;
+}
+#followUs img {
+  height: 30px;
+  width: 30px;
+  padding: 1% 3% 0% 3%;
+}

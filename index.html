@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Hikers</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body id="homePage">
+
+<!--  HEADER
+ ==================================================
+ ================================================== -->
+    <header>
+        <img class="main" src="images/hiking3.png" alt="text" />
+        <section id="header">
+                <img  class="logo" src="images/hikersGuide.png" alt="image" />
+                    <h6 class="a">1-904-378-9087</h6>
+                    <h6 class="a">Login In / Register</h6>
+        </section>
+
+        <!--  NAVIGATION
+ ==================================================
+ ================================================== -->
+<nav id="navigation">
+    <Form id="search">
+        <input placeholder="Search" id="check" class="searchbox" name="searchbox" type="search" onsearch="search()" />
+        <img src="images/search-3-512.png" alt="Alternate Text" />
+    </Form>
+
+    <ul class="box">
+    <li class="links">
+                    <a href="index.html" >Home</a>
+                </li>
+                <li class="links">
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li class="links">
+                  <a href="events.html" >Events</a>
+                </li>
+                <li class="links">
+                    <a href="contact.html" >Contact</a>
+                </li>
+            </ul>
+              
+     </nav>
+
+    </header>
+
+                <!--  RECENT POSTS
+ ==================================================
+ ================================================== -->
+    <section id="posts">
+        <h2 id="id02">Recent Posts</h2>
+        <article >
+            <img src="images/hikers1003.jpg" alt="Alternate Text" />
+            <h3>Lorem Ipsum</h3>
+            <p><strong>May 4</strong></p>
+            <p>Text</p>
+            <dl>
+                <dt></dt>
+                <dd><strong>by Jen Plaza</strong></dd>
+                <dt></dt>
+                <dd><strong>Sep 12, 2012</strong></dd>
+                <dt></dt>
+                <dd><strong>lollipop </strong></dd>
+            </dl>
+        </article>
+    </section>
+    <span>
+        <input type="button" value="View More" class="more" onclick="location.href='#';" />
+    </span>
+
+                    <!--  JOIN
+ ==================================================
+ ================================================== -->
+    <!--join section-->
+    <section id="join">
+        
+        <section>
+            <h2>JOIN THE ADVENTURE</h2>
+            <h4>Lorem Ipsum</h4>
+            <p>Dessert gingerbread lollipop pudding cheesecake gummies.</p>
+            <p>author | city, St </p>
+            
+        </section>
+        <img src="images/climbers.png" alt="climbers" />
+    </section>
+
+    <!--signUp section-->
+    <section id="sign">
+        <section>
+            <div>
+                <p>
+                    The biggest advebture of your life is right aruond the corner.
+                    <strong> Sign up Now!</strong>
+                
+            
+                <button  class="button" onclick="openForm()" ><img src="images/arrow.png" alt="arrow" /></button>
+            </p>
+            
+                <!--popop form-->
+                <form id="mailingList">
+
+                    <label for="email"><b>Email</b></label>
+
+                    <input type="text" placeholder="Enter Email" name="email">
+
+                    <button id="buttonS" type="submit" class="buttonS">Submit</button>
+                </form>
+
+
+                <script>
+                    document.getElementById("buttonS").addEventListener('click', function () {
+                        alert("Thank you for submitting your request, your email has been recieved.");
+
+                        close();
+
+                        //document.getElementById("mailingList").style.display = "none";
+                    });
+                </script>
+            </div>
+        </section>
+    </section>
+
+    <!--Upcoming Events block-->
+    <section id="UpcomingEvents">
+        <section id="mEvents">
+            <h3>Upcoming Events</h3>
+            <div>
+                <h5>Event Title</h5>
+            <img  src="images/calendar-2.png" alt="calendar" />
+                <p>
+                Evvent Description
+            </p>
+        </div>
+        </section>
+
+         <!--Members block-->
+        <section id="members">
+            <h3>New Hikers</h3>
+            <div>
+                <img src="images/user.png" alt="Alternate Text" />
+                <p>
+                <strong>jen Plaza</strong>
+                    <br />
+                    City, ST
+                </p>
+            </div>
+        </section> 
+
+        <!--About block-->
+        <section id="about">
+            <h3>About</h3>
+            <div>
+                <h5> Title</h5>
+            <p>
+                Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu sem integer.
+            </p>
+        </div>
+    </section>
+</section>
+
+    <!--footer-->
+    <!--Social Media Icons with links-->
+    <footer id="footer">
+            <section id="support">
+                <div>
+                    <h3>CUSTOMER SUPPORT</h3>
+                    <p>Let us help you find what you are looking for</p>
+                    <br />
+                    <a href="#" target="_blank">HELP</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">CONTACT</a>
+                </div>
+            </section>
+            <section id="signUp">
+                <div>
+                    <h3>SIGN ME UP</h3>
+                    <p>Join The Nation</p>
+                    <Form><input class="srch" name="q" placeholder="Enter Email" type="search" size="36" /><input class="submit" type="submit" /></Form>
+                </div>
+            </section>
+            <section id="followUs">
+                <div>
+                    <h3>FOLLOW US</h3>
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a>
+                    <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.png" alt="YouTube" /></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a>
+                    <a href="images/HikersGuide.jpg" target="_blank"><img src="images/sharethis-3-256.png" alt="Share" /></a>
+
+                    <h3>&copy;Hikers</h3>
+                </div>
+            </section>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/content.js"></script>
+</body>
+</html>
