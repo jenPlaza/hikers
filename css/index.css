@@ -216,28 +216,30 @@ option {
   / *===================================================
   ================================================== */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 765px) {
   #posts article {
     width: 770px;
     height: 770px;
-    /*   width: auto;
-  height: 100%; 
-    float: left;
-    color: lemonchiffon;
-    overflow: hidden;*/
   }
   #join img {
     margin: 25% -2%;
-    /*   overflow: hidden;
-    width: 110%; */
   }
   #join section {
-    /* border: 1px solid red; */
-    /*     position: relative;
-    padding: 4%;
-    width: 90%; */
     margin: -75% 0%;
-    /*     text-align: left;
-    color: #eeeeee; */
+  }
+}
+@media screen and (min-width: 991px) {
+  #posts {
+    margin-top: -1%;
+  }
+  #posts article {
+    width: 480px;
+    height: 480px;
+  }
+  #join img {
+    margin: 25% -2%;
+  }
+  #join section {
+    margin: -75% 0%;
   }
 }
