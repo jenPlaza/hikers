@@ -7,24 +7,31 @@
   /* border: 1px solid white; */
   position: relative;
   justify-content: center;
-  margin-top: 75%;
+  margin-top: -20%;
   width: 100%;
   overflow: hidden;
 }
 
 #posts article,
 #aLevel2 article {
-  width: 380px;
-  height: 380px;
+  width: 375px;
+  height: 375px;
+  /*   width: auto;
+  height: 100%; */
   float: left;
   color: lemonchiffon;
+  overflow: hidden;
 }
 #posts article img,
 #aLevel2 article img {
-  width: 330px;
-  height: 330px;
+  /* width: 330px;
+  height: 330px; */
+  width: 100%;
+  height: 100%;
   border: 15px solid #292828;
+  overflow: hidden;
 }
+
 #posts article h3 {
   margin: -300px 0px 0px 0px;
 }
@@ -92,38 +99,39 @@ span .more {
 ================================================== */
 #join {
   position: relative;
-  width: 110%;
   height: 375px;
   margin: 15% -2%;
   background-color: #f0ae35;
 }
 #join img {
-  width: 1200px;
-  height: 375px;
-  margin: 0% -15%;
+  margin: 53% -15%;
+  overflow: hidden;
 }
 #join section {
   /* border: 1px solid red; */
   position: relative;
   padding: 4%;
   width: 90%;
-  margin: -95% 0%;
+  margin: -160% 0%;
   text-align: left;
   color: #eeeeee;
 }
 
 /*sign up*/
 #sign {
-  /* border: 1px solid aqua; */
+  /* border: 1px solid aqua; 
+  margin: -10% 0% 10% 0%;
+  */
   position: relative;
   width: 100%;
-  height: auto;
-  margin: -10% 0% 10% 0%;
-  padding: 0;
+  padding: 3%;
+  margin: auto;
   background-color: #292828;
 }
 #sign section {
   /*   border: 1px solid yellow; */
+  width: 85%;
+  height: 90px;
   text-align: center;
   color: #888888;
   margin: auto;
@@ -156,6 +164,7 @@ option {
   display: block;
   color: #888888;
   margin: auto;
+  margin-top: 20%;
 }
 
 #mEvents,
@@ -169,7 +178,15 @@ option {
 #UpcomingEvents #about div {
   /* border: 1px solid purple; */
   width: 90%;
+  transition: transform 0.2s;
   margin: auto;
+}
+
+#UpcomingEvents #mEvents div:hover {
+  transform: scale(1.1);
+}
+#UpcomingEvents #about div:hover {
+  transform: scale(1.1);
 }
 #UpcomingEvents #mEvents img {
   width: 12%;
@@ -193,4 +210,34 @@ option {
 }
 #UpcomingEvents #members p {
   margin: 1% 0% 10% 0%;
+}
+
+/* BREAKPOINTS*
+  / *===================================================
+  ================================================== */
+
+@media screen and (min-width: 768px) {
+  #posts article {
+    width: 770px;
+    height: 770px;
+    /*   width: auto;
+  height: 100%; 
+    float: left;
+    color: lemonchiffon;
+    overflow: hidden;*/
+  }
+  #join img {
+    margin: 25% -2%;
+    /*   overflow: hidden;
+    width: 110%; */
+  }
+  #join section {
+    /* border: 1px solid red; */
+    /*     position: relative;
+    padding: 4%;
+    width: 90%; */
+    margin: -75% 0%;
+    /*     text-align: left;
+    color: #eeeeee; */
+  }
 }
