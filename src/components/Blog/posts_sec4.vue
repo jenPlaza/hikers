@@ -1,0 +1,293 @@
+<template>
+    <section id="articlesPart4">
+      <!--  article 1 -->
+      <article>
+        <img
+          src="../../assets/images/forest-grass-lawn-1826.jpg"
+          alt="Alternate Text"
+        />
+        <div>
+          <header>
+            <p><strong>Lorem Ipsum</strong></p>
+          </header>
+          <h3>
+            Dessert gingerbread lollipop pudding cheesecake gummies
+            marshmellows.
+          </h3>
+          <p>
+            Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed
+            velit dignissim sodales ut eu sem integer.
+          </p>
+        </div>
+      </article>
+      <!--  article 2 -->
+      <article>
+        <img
+          src="../../assets/images/fall-background-photo.jpg"
+          alt="Alternate Text"
+        />;
+        <div>
+          <header>
+            <p><strong>Lorem Ipsum</strong></p>
+          </header>
+          <h3>Dessert gingerbread lollipop pudding cheesecake gummies.</h3>
+          <p>
+            Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed
+            velit dignissim sodales ut eu sem integer.
+          </p>
+        </div>
+      </article>
+
+      <!--  section -->
+      <section>
+        <div>
+          <header>
+            <h3>Lorem Ipsum</h3>
+          </header>
+          <p>
+            Dessert gingerbread lollipop pudding cheesecake gummies sesame snaps
+            jelly wafer.
+          </p>
+        </div>
+      </section>
+      <!--  end -->
+    </section>
+</template>
+
+<script>
+export default {
+  name: "posts_sec4",
+};
+
+var pSec4 = new XMLHttpRequest();
+pSec4.open("GET", "https://joshbloom.github.io/dws1/data/hikersguide.json");
+
+pSec4.onload = function() {
+  var jsonPosts = JSON.parse(pSec4.responseText);
+  articles4(jsonPosts);
+};
+function articles4(dataPosts4) {
+  var imageArray3 = [
+    require("@/assets/images/File_005.png"),
+    require("@/assets/images/crystalsaltlake.png"),
+    require("@/assets/images/forest-grass-lawn-1826.jpg"),
+    require("@/assets/images/fall-background-photo.jpg"),
+  ];
+  var htmlArticle4 = "";
+  for (var i = 2; i < dataPosts4.locations.length - 1; i++) {
+    htmlArticle4 += "<article>";
+    htmlArticle4 += '<img src="' + imageArray3[i] + '"';
+    htmlArticle4 += 'alt="' + dataPosts4.locations[i].title + '"/>';
+
+    htmlArticle4 +=
+      "<div><header><h3>" + dataPosts4.locations[i].title + "</h3></header>";
+    htmlArticle4 +=
+      "<p><strong>" + dataPosts4.locations[i].text + "</strong></p>";
+    htmlArticle4 += "<p>" + dataPosts4.posts[i].text + "</p>";
+    htmlArticle4 += "</div>";
+    htmlArticle4 += "</article>";
+  }
+  htmlArticle4 += "<section>";
+  htmlArticle4 += '<img src="' + imageArray3[1] + '"';
+  htmlArticle4 += 'alt="' + dataPosts4.locations[4].title + '"/>';
+  htmlArticle4 += "<div>";
+  htmlArticle4 +=
+    "<header><h3>" + dataPosts4.locations[4].title + "</h3></header>";
+  htmlArticle4 += "<p>" + dataPosts4.locations[4].text + "</p>";
+  htmlArticle4 +=
+    "<p>" +
+    dataPosts4.locations[4].city +
+    " | " +
+    dataPosts4.locations[4].state +
+    "</p>";
+  htmlArticle4 += "</div>";
+  htmlArticle4 += "</section>";
+
+  var articleBlog = document.getElementById("articlesPart4");
+  articleBlog.innerHTML = htmlArticle4;
+}
+
+pSec4.send();
+</script>
+<style>
+
+#articlesPart4 {
+  width: 100vw;
+  height: auto;
+}
+#articlesPart4 article {
+  width: 100vw;
+  margin-bottom: 5%;
+  margin-left: 1px;
+  color: #ffd503;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+#articlesPart4 article:first-of-type {
+    height:400px;
+    }
+  #articlesPart4 article:last-of-type {
+    height:500px;
+    }
+#articlesPart4 article img {
+  width: 100vw;
+  object-fit: contain;
+}
+#articlesPart4 article div {
+  height: 275px;
+  width: 100%;
+  background-color: rgba(16, 24, 32, 0.4);
+  position: absolute;
+}
+
+#articlesPart4 article h3 {
+  position: relative;
+  text-align: left;
+  font-weight: bolder;
+  margin: 5% 2% 0% 2%;
+}
+#articlesPart4 article p strong {
+  position: relative;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #ccaa00;
+}
+#articlesPart4 p {
+  margin: 4% 2% 0% 2%;
+}
+#articlesPart4 section {
+  width: 400px;
+  height: 550px;
+}
+#articlesPart4 section img {
+  width: 100vw;
+}
+#articlesPart4 section div {
+  margin: -65% 0 0 0;
+}
+
+/* BREAKPOINTS*
+  / *====================================== */
+@media screen and (min-width: 768px) {
+  #articlesPart4 article {
+    margin-bottom: 0%;
+        height: 29vh;
+  }
+  #articlesPart4 section {
+    width: 100%;
+    height: 1100px;
+  }
+  #articlesPart4 section div {
+    margin: -75% 3% 0% 3%;
+  }
+  #articlesPart4 article div{
+bottom:-41px;
+  }
+  #articlesPart4 article img {
+    width: 100vw;
+    object-fit: contain;
+}
+#articlesPart4 article:first-of-type {
+     margin-bottom:-20%;
+  }
+  #articlesPart4 article:first-of-type img {
+     height: 100%;
+  }
+  #articlesPart4 article:last-of-type {
+     height: 870px;
+  }
+  #articlesPart4 article:last-of-type img {
+     height: 36vh;
+  }
+}
+@media screen and (min-width: 992px) {
+/* #articlesPart4 {
+    width: 80vw;
+    height: auto;
+    margin-bottom: -78%;
+  } */
+  #articlesPart4 article {
+    width: 100vw;
+    float: left;
+    margin-top: 5%;
+  }
+  #articlesPart4 article:first-of-type img {
+    width: 142vw;
+    }
+  #articlesPart4 article:last-of-type img {
+    width: 100vw;
+    height:40vh;
+    }
+     #articlesPart4 article:last-of-type div {
+    position: absolute;
+    bottom: 117px;
+  }
+  #articlesPart4 section img {
+    height: 500px;
+    object-fit:cover;
+}
+   #articlesPart4 section {
+  width: 100vw;
+    position: relative;
+    margin-bottom: 10%;
+  }
+ 
+  #articlesPart4 section div {
+    margin: -25% 3% 0% 3%;
+}
+}
+@media screen and (min-width: 1200px) {
+ #articlesPart4 {
+margin-left: -13px;
+}
+  #articlesPart4 section {
+    text-align: center;
+  }
+#articlesPart4 article img {
+height: 43vh;
+  }
+  #articlesPart4 article:first-of-type div {
+    bottom: 19px;
+}
+#articlesPart4 article:last-of-type div {
+    bottom: 15px;
+}
+#articlesPart4 section div {
+    margin: -30% 3% 0% 3%;
+}
+#articlesPart4 article div {
+    bottom: 20px;
+}
+}
+@media screen and (min-width: 1500px) {
+  #articlesPart4 article h3,
+  #articlesPart4 article p strong,
+  #articlesPart4 p {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 2000px) {
+#articlesPart4 article {
+    height: 23vh;
+}
+#articlesPart4 article img {
+    width: 100vw;
+    height: 24vh;
+    object-fit: fill;
+}
+#articlesPart4 section img {
+    height: 800px;
+    object-fit: cover;
+}
+#articlesPart4 section div {
+    margin: -25% 3% 0% 3%;
+}
+#articlesPart4 section {
+    margin-bottom: -17%;
+}
+}
+</style>
