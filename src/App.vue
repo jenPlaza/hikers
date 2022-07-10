@@ -30,4 +30,13 @@ export default {
     background-image: url('./assets/images/pattern28.png');
     font: 1em 'Program OT Book', Georgia, serif;
 }
+   .body {
+      font: 1em 'Program OT Book', Georgia, serif;
+         overflow: hidden;
+        height:100%;
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+        padding:0;
+    }
 </style>
