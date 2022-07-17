@@ -26,8 +26,7 @@ export default {
       // eslint-disable-next-line vue/multi-word-component-names
   name: 'banner',
 }
-</script> 
-<script>
+
 var myHome = new XMLHttpRequest();
 myHome.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 
