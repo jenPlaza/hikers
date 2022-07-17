@@ -19,7 +19,7 @@
       <h3>New Hikers</h3>
       <ul>
         <li>
-          <img src="images/user.png" alt="Alternate Text" />
+          <img src="../../assets/images/user.png" alt="Alternate Text" />
           <p>
             <strong>jen Plaza</strong>
             <br />

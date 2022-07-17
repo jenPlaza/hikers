@@ -39,24 +39,6 @@
             <p><strong>VA</strong></p>
           </section>
         </article>
-        <article>
-          <img src="../../assets/images/File_005.png" alt="Alternate Text" />
-          <section>
-            <h3>Veterans Appreciation Walk and Reception</h3>
-            <p>2016-11-05</p>
-            <p><strong>7030 Garrison St. Arvada </strong></p>
-            <p><strong>CO</strong></p>
-          </section>
-        </article>
-        <article>
-          <img src="../../assets/images/File_015.png" alt="Alternate Text" />
-          <section>
-            <h3>Turkey Trek 5K Family Hike</h3>
-            <p>2016-11-19</p>
-            <p><strong>2100 East Centerville-Station Centerville </strong></p>
-            <p><strong>OH</strong></p>
-          </section>
-        </article>
       </section>
       <!-- This Month -->
       <section id="ThisMonth" class="tabContent">
@@ -66,24 +48,6 @@
             <h3>Bear Mountain State Park</h3>
             <p>2019-11-04</p>
             <p><strong>Route 9W North, Bear Mountain </strong></p>
-            <p><strong>NY</strong></p>
-          </section>
-        </article>
-        <article>
-          <img src="../../assets/images/File_012.png" alt="Alternate Text" />
-          <section>
-            <h3>The Race Against Extinction</h3>
-            <p>2018-09-22</p>
-            <p><strong>Any Place Washington Central Park</strong></p>
-            <p><strong>DC</strong></p>
-          </section>
-        </article>
-        <article>
-          <img src="../../assets/images/File_018.png" alt="Alternate Text" />
-          <section>
-            <h3>Weekday Wanderer - Harriman State Park</h3>
-            <p>2017-06-10</p>
-            <p><strong>Harriman State Park </strong></p>
             <p><strong>NY</strong></p>
           </section>
         </article>
@@ -136,40 +100,40 @@ function secToday(dataEvents2) {
     require("@/assets/images/File_013.png"),
   ];
 
-  var htmlEvents2 = "<section>";
+  var htmlEvents2 = "<section><ul>";
 
   for (var i = 0; i < dataEvents2.events.length; i++) {
-    htmlEvents2 += "<article>";
+    htmlEvents2 += "<li><article>";
     htmlEvents2 += '<img src="' + imageArray[i] + '"';
     htmlEvents2 += 'alt="' + dataEvents2.events[i].subtitle + '"/>';
-    htmlEvents2 += "<section>";
+    htmlEvents2 += "<section><div>";
     htmlEvents2 += "<h3>" + dataEvents2.events[i].title + "</h3>";
     htmlEvents2 += "<div><p>" + dataEvents2.events[i].date + "</p>";
-    htmlEvents2 += "<p><strong>" + dataEvents2.events[i].location + "<br/ >";
+    htmlEvents2 += "<p><strong>" + dataEvents2.events[i].location + ", ";
     htmlEvents2 += dataEvents2.events[i].state + "</strong></p></div>";
-    htmlEvents2 += "</section>";
-    htmlEvents2 += "</article>";
+    htmlEvents2 += "</div></section>";
+    htmlEvents2 += "</article></li>";
   }
 
-  htmlEvents2 += "<article>";
+ htmlEvents2 += "<li><article>";
   htmlEvents2 += '<img src="' + imageArray[5] + '"';
   htmlEvents2 += 'alt="' + dataEvents2.events[3].subtitle + '"/>';
-  htmlEvents2 += "<section>";
+  htmlEvents2 += "<section><div>";
   htmlEvents2 += "<h3>" + dataEvents2.events[3].title + "</h3>";
   htmlEvents2 += "<div><p>" + dataEvents2.events[3].date + "</p>";
-  htmlEvents2 += "<p><strong>" + dataEvents2.events[3].location + "<br/ >";
+  htmlEvents2 += "<p><strong>" + dataEvents2.events[3].location + ", ";
   htmlEvents2 += dataEvents2.events[3].state + "</strong></p></div>";
-  htmlEvents2 += "</section>";
-  htmlEvents2 += "</article>";
+  htmlEvents2 += "</div></section>";
+  htmlEvents2 += "</article></li>";
 
-  htmlEvents2 += "</section>";
+  htmlEvents2 += "</ul></section>";
 
   var articleEvents = document.getElementById("Today");
   articleEvents.innerHTML = htmlEvents2;
 }
 
 function secWeekend(dataEvents3) {
-  var htmlEvents3 = "<section>";
+  var htmlEvents3 = "<section><ul>";
 
   var imageArray = [
     require("@/assets/images/sunnytrees.png"),
@@ -181,24 +145,24 @@ function secWeekend(dataEvents3) {
   ];
 
   for (var i = 2; i < dataEvents3.events.length; i++) {
-    htmlEvents3 += "<article>";
+   htmlEvents3 += "<li><article>";
     htmlEvents3 += '<img src="' + imageArray[i] + '"';
     htmlEvents3 += 'alt="' + dataEvents3.events[i].subtitle + '"/>';
-    htmlEvents3 += "<section>";
+    htmlEvents3 += "<section><div>";
     htmlEvents3 += "<h3>" + dataEvents3.events[i].title + "</h3>";
     htmlEvents3 += "<p>" + dataEvents3.events[i].date + "</p>";
-    htmlEvents3 += "<p><strong>" + dataEvents3.events[i].location + "<br/ >";
+    htmlEvents3 += "<p><strong>" + dataEvents3.events[i].location + ", ";
     htmlEvents3 += dataEvents3.events[i].state + "</strong></p>";
-    htmlEvents3 += "</section>";
-    htmlEvents3 += "</article>";
+    htmlEvents3 += "</div></section>";
+    htmlEvents3 += "</article></li>";
   }
 
-  htmlEvents3 += "</section>";
+  htmlEvents3 += "</ul></section>";
   var articleEvents = document.getElementById("Weekend");
   articleEvents.innerHTML = htmlEvents3;
 }
 function secThisMonth(dataEvents4) {
-  var htmlEvents4 = "<section>";
+  var htmlEvents4 = "<section><ul>";
 
   var imageArray = [
     require("@/assets/images/sunnytrees.png"),
@@ -210,19 +174,19 @@ function secThisMonth(dataEvents4) {
   ];
 
   for (var i = 3; i < dataEvents4.events.length; i++) {
-    htmlEvents4 += "<article>";
+    htmlEvents4 += "<li><article>";
     htmlEvents4 += '<img src="' + imageArray[i] + '"';
     htmlEvents4 += 'alt="' + dataEvents4.events[i].subtitle + '"/>';
-    htmlEvents4 += "<section>";
+    htmlEvents4 += "<section><div>";
     htmlEvents4 += "<h3>" + dataEvents4.events[i].title + "</h3>";
     htmlEvents4 += "<p>" + dataEvents4.events[i].date + "</p>";
-    htmlEvents4 += "<p><strong>" + dataEvents4.events[i].location + "<br/ >";
+    htmlEvents4 += "<p><strong>" + dataEvents4.events[i].location + ", ";
     htmlEvents4 += dataEvents4.events[i].state + "</strong></p>";
-    htmlEvents4 += "</section>";
-    htmlEvents4 += "</article>";
+    htmlEvents4 += "</div></section>";
+    htmlEvents4 += "</article></li>";
   }
 
-  htmlEvents4 += "</section>";
+  htmlEvents4 += "</ul></section>";
   var articleEvents = document.getElementById("ThisMonth");
   articleEvents.innerHTML = htmlEvents4;
 }
@@ -244,7 +208,7 @@ div header h2 {
   border: none;
   background-color: transparent;
   outline: none;
-  padding: 14px 30px;
+  padding: 14px 18px;
   transition: 0.3s;
   font-size: 22px;
   text-align: center;
@@ -257,52 +221,59 @@ div header h2 {
   border-top: none;
   background-color: transparent;
 }
+.tabContent>section{
+      margin-top: -14px;
+}
 #events {
   background-color: #292828;
   margin-bottom: 15%;
-  width: 95vw;
   text-align: center;
-  padding-bottom: 1.5%;
+}
+#events ul{
+list-style: none;
+padding:0;
 }
 #events article {
   margin: auto;
-  height: 500px;
-  width: 95vw;
+  height: 490px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #events article img {
   height: 300px;
-  width: 95vw;
   object-fit: cover;
+  width:100%;
 }
 #events article section {
-  height: 170px;
-  width: 95vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: black;
-  padding-bottom: 15px;
+    height: 170px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    padding: 4px;
+    width:100%;
+}
+#events article section div{
+margin:5px;
 }
 #events article section h3{
 margin-bottom: 0;
 }
-#events article section div {
-  width: 95vw;
-  padding-bottom: 2%;
-}
-/* #events article section p strong {
-            margin-top: -10px;
-}*/
+
 /* BREAKPOINTS*
   / *====================================== */
 @media screen and (min-width: 768px) {
   #events {
     margin-bottom: 12%;
   }
+
+.tabContent {
+border: 1px solid #292828;
+    background-color: #292828;
+}
+
 
   div header h2 {
     padding: 3% 0 0 3%;
@@ -321,9 +292,12 @@ margin-bottom: 0;
   #events article section div {
     width: 95vw;
   }
+  #tab button {
+    padding: 14px 50px;
+}
 }
 @media screen and (min-width: 992px) {
-  div header h2 {
+div header h2 {
     padding: 3% 0 0% 4%;
   }
   #events > section > section {
@@ -338,7 +312,7 @@ margin-bottom: 0;
     border: 1px solid #292828;
     width: calc(100% / 2.1);
     margin-bottom: -2%;
-    height: 28vh;
+    height: 365px;
   }
   #events article img {
     height: 17vh;
@@ -347,6 +321,7 @@ margin-bottom: 0;
   #events article section {
     height: 155px;
     width: 46vw;
+    border:1px solid #292828a4;
   }
   #events article section div {
     width: 46vw;
@@ -354,6 +329,9 @@ margin-bottom: 0;
   #tab {
     margin: 0;
   }
+    .tabContent>section{
+      margin-top: 0px;
+}
 }
 @media screen and (min-width: 1200px) {
   .body{

@@ -99,7 +99,7 @@ footer h4 {
   transform: scale(1.1);
 }
 #signUp .submit {
-  height: 36px;
+  height: 60px;
   width: 75px;
   background-color: transparent;
   border: none;
@@ -121,6 +121,7 @@ footer h4 {
   #followUs {
     width: 96vw;
   }
+
 }
 @media (min-width: 992px) {
  footer:not(footer.btns):not(#posts footer){

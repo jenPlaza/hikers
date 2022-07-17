@@ -6,7 +6,7 @@
         <h2 id="id02">Recent Posts</h2>
       </header>
       <article>
-        <img src="images/hikers1003.jpg" alt="Alternate Text" />
+        <img src="../../assets/images/hikers1003.jpg" alt="Alternate Text" />
         <header>
           <h3>Lorem Ipsum</h3>
         </header>

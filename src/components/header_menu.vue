@@ -93,11 +93,13 @@ nav > div > button:hover,
 }
 
 nav > div > button {
-  padding-left: 2%;
+    padding: 0 1%;
   background-color: transparent;
   outline: none;
   border: none;
   color: white;
+  font-size: 17px;
+  font: 1em 'Program OT Book', Georgia, serif;
 }
 
 .dropdown-content {
@@ -161,7 +163,7 @@ nav {
     width: 25vw;
   }
   nav > div .nav a {
-    padding: 15px 25px;
+    padding: 15px 29px;
   }
   nav .logo {
     width: 60%;

@@ -123,7 +123,7 @@ export default {
 }
 #misc article body {
   margin: -3% 0px 0% 8%;
-  width: 65vw;
+  width: 70vw;
   height: auto;
 }
 #misc article footer {
@@ -139,6 +139,9 @@ export default {
   color: #8a7300;
   margin-bottom: -3px;
 }
+#misc article p  {
+   text-align: justify;
+    }
 
 /* Gift, Tag, App icons*/
 #misc article img:not(#misc .btnL img):not(#misc .appStore img):not(#misc .googlePlay img) {
@@ -152,6 +155,7 @@ export default {
   text-align: left;
   margin-left: -25px;
 }
+
 /* Buttons ------start*/
 #misc .btns {
   display: flex;

@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style>
+body{
+    margin:0;
+}
 #app {
   width:100%;
       height:100%;
