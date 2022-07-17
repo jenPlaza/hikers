@@ -58,7 +58,7 @@ export default {
 };
 </script>
 <style>
-footer:not(footer.btns):not(#posts footer){
+footer:not(footer.btns):not(#posts footer):not(#articlesPart1 footer):not(#articlesPart3 footer){
   text-align: center;
   color: #eeeeee;
   display: flex;

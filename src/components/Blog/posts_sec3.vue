@@ -132,7 +132,7 @@ color: #bb9d06;
     width: 100vw;;
   }
   #articlesPart3 article:first-of-type div {
-      height: 7vh;
+      height: 130px;
 }
   #articlesPart3 article:last-of-type div {
       height: 230px;
@@ -140,9 +140,9 @@ color: #bb9d06;
   #articlesPart3 article div {
     width: 65%;
   }
-  #articlesPart3 footer {
+  /* #articlesPart3 footer {
     bottom: 50px;
-  }
+  } */
 }
 @media screen and (min-width: 992px) {
   #articlesPart3 {

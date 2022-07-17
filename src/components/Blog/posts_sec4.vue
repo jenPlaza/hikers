@@ -164,9 +164,10 @@ pSec4.send();
 }
 #articlesPart4 section img {
   width: 100vw;
+  height:500px;
 }
 #articlesPart4 section div {
-  margin: -65% 0 0 0;
+  margin: -60% 10px 0 10px;
 }
 
 /* BREAKPOINTS*
@@ -178,38 +179,35 @@ pSec4.send();
   }
   #articlesPart4 section {
     width: 100%;
-    height: 1100px;
+    height: 500px;
+    margin: 7% 0 3%;
   }
   #articlesPart4 section div {
-    margin: -75% 3% 0% 3%;
+    margin: -32% 3% 0% 3%;
   }
   #articlesPart4 article div{
 bottom:-41px;
+left:10px;
   }
   #articlesPart4 article img {
     width: 100vw;
     object-fit: contain;
 }
 #articlesPart4 article:first-of-type {
-     margin-bottom:-20%;
+     margin-bottom:10%;
   }
   #articlesPart4 article:first-of-type img {
      height: 100%;
   }
   #articlesPart4 article:last-of-type {
-     height: 870px;
+     height: 505px;
   }
   #articlesPart4 article:last-of-type img {
      height: 36vh;
   }
 }
 @media screen and (min-width: 992px) {
-/* #articlesPart4 {
-    width: 80vw;
-    height: auto;
-    margin-bottom: -78%;
-  } */
-  #articlesPart4 article {
+ #articlesPart4 article {
     width: 100vw;
     float: left;
     margin-top: 5%;

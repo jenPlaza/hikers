@@ -273,7 +273,9 @@ margin-bottom: 0;
 border: 1px solid #292828;
     background-color: #292828;
 }
-
+.tabContent>section {
+    margin-top: -27px;
+}
 
   div header h2 {
     padding: 3% 0 0 3%;
@@ -281,7 +283,7 @@ border: 1px solid #292828;
 
   #events article {
     margin: 5.5% auto;
-    height: 575px;
+    height: 555px;
   }
 #events article img {
     height: 450px;
