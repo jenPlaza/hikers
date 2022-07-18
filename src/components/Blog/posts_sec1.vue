@@ -1,6 +1,6 @@
 <template>
   <div id="articlesPart1">
-    <article>
+    <ul><article>
       <img src="../../assets/images/hikers1003.jpg" alt="hikers" />
 
       <header>
@@ -19,7 +19,7 @@
           <dd><strong>lollipop </strong></dd>
         </dl>
       </footer>
-    </article>
+    </article></ul>
   </div>
 </template>
 

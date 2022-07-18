@@ -5,7 +5,7 @@
       <header>
         <h2 id="id02">Recent Posts</h2>
       </header>
-      <article>
+      <ul><article>
         <img src="../../assets/images/hikers1003.jpg" alt="Alternate Text" />
         <header>
           <h3>Lorem Ipsum</h3>
@@ -22,7 +22,7 @@
           </dl>
           <button>View More</button>
         </footer>
-      </article>
+      </article></ul>
     </section>
   </main>
 </template>
@@ -60,7 +60,6 @@ function secEvents(dataHome) {
     htmlHome += "<p>" + dataHome.posts[i].moreLink + "</p>";
     htmlHome += "</span>";
     htmlHome += "</footer>";
-    
     htmlHome += "</article></li>";
   }
   htmlHome += "</ul>";

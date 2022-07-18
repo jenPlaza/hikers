@@ -23,18 +23,10 @@ myHome.onload = function() {
   secJoin(jsonHome);
 };
 function secJoin(dataHomeJoin) {
-  var htmlHome2 = "<div>";
-  htmlHome2 += "<h2>JOIN THE ADVENTURE</h2>";
+  var htmlHome2 = "<h2>JOIN THE ADVENTURE</h2>";
   htmlHome2 += "<h3>" + dataHomeJoin.locations[4].title + "</h3>";
   htmlHome2 += "<p>" + dataHomeJoin.locations[4].text + " </p>";
-  htmlHome2 +=
-    "<p>" +
-    dataHomeJoin.locations[4].city +
-    " | " +
-    dataHomeJoin.locations[4].state +
-    " </p>";
-      htmlHome2 += "</div>";
- // htmlHome2 += "<img class="climb" alt=" climbers" src="../../assets/images/climber.png" />";
+  htmlHome2 +="<p>" + dataHomeJoin.locations[4].city +" | " + dataHomeJoin.locations[4].state +" </p>";
   var articleEvents = document.getElementById("join");
   articleEvents.innerHTML = htmlHome2;
 }

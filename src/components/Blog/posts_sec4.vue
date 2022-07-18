@@ -1,7 +1,8 @@
 <template>
     <section id="articlesPart4">
       <!--  article 1 -->
-      <article>
+      <ul>
+        <article>
         <img
           src="../../assets/images/forest-grass-lawn-1826.jpg"
           alt="Alternate Text"
@@ -20,9 +21,9 @@
             velit dignissim sodales ut eu sem integer.
           </p>
         </div>
-      </article>
+      </article></ul>
       <!--  article 2 -->
-      <article>
+      <!-- <article>
         <img
           src="../../assets/images/fall-background-photo.jpg"
           alt="Alternate Text"
@@ -38,7 +39,7 @@
             velit dignissim sodales ut eu sem integer.
           </p>
         </div>
-      </article>
+      </article> -->
 
       <!--  section -->
       <section>
@@ -69,13 +70,14 @@ pSec4.onload = function() {
   articles4(jsonPosts);
 };
 function articles4(dataPosts4) {
+   var htmlArticle4 = "<ul>";
   var imageArray3 = [
     require("@/assets/images/File_005.png"),
     require("@/assets/images/crystalsaltlake.png"),
     require("@/assets/images/forest-grass-lawn-1826.jpg"),
     require("@/assets/images/fall-background-photo.jpg"),
   ];
-  var htmlArticle4 = "";
+ 
   for (var i = 2; i < dataPosts4.locations.length - 1; i++) {
     htmlArticle4 += "<article>";
     htmlArticle4 += '<img src="' + imageArray3[i] + '"';
@@ -89,6 +91,7 @@ function articles4(dataPosts4) {
     htmlArticle4 += "</div>";
     htmlArticle4 += "</article>";
   }
+    htmlArticle4 += "</ul>";
   htmlArticle4 += "<section>";
   htmlArticle4 += '<img src="' + imageArray3[1] + '"';
   htmlArticle4 += 'alt="' + dataPosts4.locations[4].title + '"/>';

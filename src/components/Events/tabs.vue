@@ -14,7 +14,8 @@
     <section id="events">
       <!-- Today -->
       <section id="Today" class="tabContent" style="display:block">
-        <article>
+        <ul>
+          <article>
           <img src="../../assets/images/sunnytrees.png" alt="Alternate Text" />
           <section>
             <h3>Lorem Ipsum</h3>
@@ -26,7 +27,8 @@
             </p>
             <p><strong>State</strong></p>
           </section>
-        </article>
+          </article>
+        </ul>
       </section>
       <!-- Weekend -->
       <section id="Weekend" class="tabContent">
@@ -91,7 +93,8 @@ myEvents.onload = function() {
 };
 
 function secToday(dataEvents2) {
-  var imageArray = [
+  var htmlEvents2 = "<ul>";
+   var imageArray = [
     require("@/assets/images/sunnytrees.png"),
     require("@/assets/images/File_017.png"),
     require("@/assets/images/File_016.png"),
@@ -99,8 +102,6 @@ function secToday(dataEvents2) {
     require("@/assets/images/photo-1507041957456-9c397ce39c97.jpg"),
     require("@/assets/images/File_013.png"),
   ];
-
-  var htmlEvents2 = "<section><ul>";
 
   for (var i = 0; i < dataEvents2.events.length; i++) {
     htmlEvents2 += "<li><article>";
@@ -126,14 +127,14 @@ function secToday(dataEvents2) {
   htmlEvents2 += "</div></section>";
   htmlEvents2 += "</article></li>";
 
-  htmlEvents2 += "</ul></section>";
+  htmlEvents2 += "</ul>";
 
   var articleEvents = document.getElementById("Today");
   articleEvents.innerHTML = htmlEvents2;
 }
 
 function secWeekend(dataEvents3) {
-  var htmlEvents3 = "<section><ul>";
+  var htmlEvents3 = "<ul>";
 
   var imageArray = [
     require("@/assets/images/sunnytrees.png"),
@@ -157,12 +158,12 @@ function secWeekend(dataEvents3) {
     htmlEvents3 += "</article></li>";
   }
 
-  htmlEvents3 += "</ul></section>";
+  htmlEvents3 += "</ul>";
   var articleEvents = document.getElementById("Weekend");
   articleEvents.innerHTML = htmlEvents3;
 }
 function secThisMonth(dataEvents4) {
-  var htmlEvents4 = "<section><ul>";
+  var htmlEvents4 = "<ul>";
 
   var imageArray = [
     require("@/assets/images/sunnytrees.png"),
@@ -186,7 +187,7 @@ function secThisMonth(dataEvents4) {
     htmlEvents4 += "</article></li>";
   }
 
-  htmlEvents4 += "</ul></section>";
+  htmlEvents4 += "</ul>";
   var articleEvents = document.getElementById("ThisMonth");
   articleEvents.innerHTML = htmlEvents4;
 }

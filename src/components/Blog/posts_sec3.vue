@@ -1,6 +1,6 @@
 <template>
     <section id="articlesPart3">
-      <article>
+      <ul><article>
         <img src="../../assets/images/union-wood-sunrise.jpg" alt="image" />
         <div>
           <header>
@@ -16,7 +16,7 @@
             <p><strong>lollipop </strong></p>
           </footer>
         </div>
-      </article>
+      </article></ul>
     </section>
 </template>
 
@@ -33,20 +33,18 @@ pSec3.onload = function() {
   articlesPart3(jsonPosts);
 };
 function articlesPart3(dataPosts3) {
+    var htmlPosts3 = "<ul>";
   var imageArray2 = [
     require("@/assets/images/union-wood-sunrise.jpg"),
     require("@/assets/images/File_001.png"),
   ];
-  var htmlPosts3 = "";
+
   for (var i = 0; i < dataPosts3.locations.length - 3; i++) {
     htmlPosts3 += "<article>";
     htmlPosts3 += '<img src="' + imageArray2[i] + '"';
     htmlPosts3 += 'alt="' + dataPosts3.locations[i].title + '"/>';
     htmlPosts3 += "<div><h5>" + dataPosts3.locations[i].title + "</h5>";
-    htmlPosts3 +=
-      "<header><p><strong>" +
-      dataPosts3.locations[i].text +
-      "</strong></p></header>";
+    htmlPosts3 +="<header><p><strong>" +dataPosts3.locations[i].text +"</strong></p></header>";
     htmlPosts3 += "<footer>";
     htmlPosts3 += "<p>by " + dataPosts3.locations[i].author + "</p>";
     htmlPosts3 += "<p>" + dataPosts3.locations[i].postDate + "</p>";
@@ -55,6 +53,7 @@ function articlesPart3(dataPosts3) {
 
     htmlPosts3 += "</article>";
   }
+      htmlPosts3 += "</ul>";
   var articleBlog = document.getElementById("articlesPart3");
   articleBlog.innerHTML = htmlPosts3;
 }
