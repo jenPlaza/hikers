@@ -252,7 +252,7 @@ h3 {
 
 @media screen and (min-width: 992px) {
   #misc {
-    margin: 18% 0 3% 0;
+    margin: 15% 0 3% 0;
   }
   #promos {
     margin-top: -12%;
@@ -262,7 +262,7 @@ h3 {
     align-items: start;
     flex-direction: row;
     width: 87vw;
-    margin: 0% 0 0 3%;
+     margin: 0% 5px 0 0;
     height: 115px;
   }
   #misc article {

@@ -203,16 +203,25 @@ width:89vw;
 @media (min-width: 992px){
   #articlesPart1 img, #articlesPart1 article > div {
     height: 6vh;
+    width:100%;
 }
+
 #articlesPart1 article {
-    height: 10.5vh;
+    height: 142px;
+    width:100%;
 }
 
 #articlesPart1 article div:nth-child(2) strong {
-    width: 43vw;
+    width: 100%;
 }
 #articlesPart1 {
     margin-bottom: 0%;
+}
+#articlesPart1 img {
+    width: 11vw;
+}
+#articlesPart1 footer {
+    width: 100%;
 }
 }
 @media screen and (min-width: 1200px) {

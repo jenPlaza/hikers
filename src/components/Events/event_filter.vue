@@ -84,15 +84,18 @@ h3 {
   padding: 0 1%;
 }
   #filter article {
-    width: calc(100% / 3.2);
-    margin: 0;
+  width:calc(100%/3);
     padding: 0;
-    height: 8vh;
+    height: 102px;
     margin: 0% 0 3% 0;
   }
   #filter article:nth-child(1) {
     margin: 0;
     padding: 0;
+  }
+    #filter article:nth-child(2) {
+   width:39.5%;
+   margin: 0 2%;
   }
 }
 @media screen and (min-width: 1200px) {

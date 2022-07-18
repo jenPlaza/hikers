@@ -124,7 +124,7 @@ footer h4 {
 
 }
 @media (min-width: 992px) {
- footer:not(footer.btns):not(#posts footer){
+ footer:not(footer.btns):not(#posts footer):not(#articlesPart1 footer):not(#articlesPart3 footer){
     display: flex;
     flex-direction: row;
     justify-content: center;

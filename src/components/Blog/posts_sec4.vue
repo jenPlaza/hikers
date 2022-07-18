@@ -210,7 +210,7 @@ left:10px;
  #articlesPart4 article {
     width: 100vw;
     float: left;
-    margin-top: 5%;
+    /* margin-top: 5%; */
   }
   #articlesPart4 article:first-of-type img {
     width: 142vw;
@@ -218,10 +218,13 @@ left:10px;
   #articlesPart4 article:last-of-type img {
     width: 100vw;
     height:40vh;
+    object-fit: cover;
     }
      #articlesPart4 article:last-of-type div {
     position: absolute;
-    bottom: 117px;
+    bottom: 51px;
+    left:0;
+    padding: 1px 5px;
   }
   #articlesPart4 section img {
     height: 500px;
@@ -232,7 +235,12 @@ left:10px;
     position: relative;
     margin-bottom: 10%;
   }
- 
+ #articlesPart4 article:first-of-type {
+    margin-bottom: 5%;
+}
+#articlesPart4 article:last-of-type {
+margin-bottom: -5%;
+}
   #articlesPart4 section div {
     margin: -25% 3% 0% 3%;
 }

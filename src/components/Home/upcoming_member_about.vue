@@ -244,7 +244,10 @@ padding:0;
   width: 225px;
     height: 165px;
   }
-#members h3, #mEvents h3 {
+  #mEvents h3 {
+margin-left: 5%;
+  }
+#members h3 {
   margin-left: 11%;
   width: 100vw;
 }
