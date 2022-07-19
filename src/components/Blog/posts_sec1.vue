@@ -60,10 +60,10 @@ function secarticlesPart1(data1) {
     htmlBlog += "<p>by " + data1.posts[i].author + "</p>";
     htmlBlog += "<p>" + data1.posts[i].postDate + "</p>";
     htmlBlog += "<p>" + data1.posts[i].moreLink + "</p></footer>";
-    htmlBlog += "<span";
-    htmlBlog +=
-      '<input type="button" value="View More" class="seeMore" onclick="location.href=#" />';
-    htmlBlog += "</span>";
+    // htmlBlog += "<span";
+    // htmlBlog +=
+    //   '<input type="button" value="View More" class="seeMore" onclick="location.href=#" />';
+    // htmlBlog += "</span>";
     htmlBlog += "</article></li>";
   }
   htmlBlog += "</ul>";
@@ -161,7 +161,7 @@ width:89vw;
   grid-column: 1 / span 1;
 }
   #articlesPart1 ul {
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
   }
   #articlesPart1 article > div {
@@ -260,11 +260,27 @@ width:89vw;
 }
 @media screen and (min-width: 1500px) {
   #articlesPart1 {
-    margin: 4% 0% 0% 0%;
+    /* margin: 4% 0% 0% 0%; */
+    width: 98vw;
   }
+  #articlesPart1 ul {
+    /* width: 97.5vw; */
+}
   #articlesPart1 article {
-    height: 140px;
+    height: 145px;
+    width: 24vw;
   }
+  #articlesPart1 article header h4 {
+    width: 17vw;
+  }
+  #articlesPart1 footer {
+    width: 24vw;
+    text-align: center;
+}
+  #articlesPart1 article div:nth-child(2) strong {
+    width: 23vw;
+    margin-top: 15px;
+}
   #articlesPart1 img {
     width: 8vw;
 }
@@ -274,12 +290,12 @@ width:89vw;
     width: auto;
     height: 8vh;
   }
-  #articlesPart4 article:first-of-type {
+  /* #articlesPart4 article:first-of-type {
     margin-bottom: 0%;
 }
 #articlesPart4 article:first-of-type img {
     width: 100vw;
-}
+} */
   #articlesPart1 article header h4 {
     width: 9vw;
 }

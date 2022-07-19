@@ -98,13 +98,8 @@ function articles4(dataPosts4) {
   htmlArticle4 += "<div>";
   htmlArticle4 +=
     "<header><h3>" + dataPosts4.locations[4].title + "</h3></header>";
-  htmlArticle4 += "<p>" + dataPosts4.locations[4].text + "</p>";
-  htmlArticle4 +=
-    "<p>" +
-    dataPosts4.locations[4].city +
-    " | " +
-    dataPosts4.locations[4].state +
-    "</p>";
+  htmlArticle4 += "<p>" + dataPosts4.locations[4].text + "<br />";
+  htmlArticle4 +=" " + dataPosts4.locations[4].city + " | " + dataPosts4.locations[4].state + "</p>";
   htmlArticle4 += "</div>";
   htmlArticle4 += "</section>";
 
@@ -122,31 +117,34 @@ pSec4.send();
 }
 #articlesPart4 ul{
   padding:0;
+  height:100%;
+  margin-bottom: 5%;
 }
 #articlesPart4 article {
-  width: 100vw;
+  /* width: 100vw;
   margin-bottom: 5%;
-  margin-left: 1px;
+  margin-left: 1px; */
   color: #ffd503;
   text-align: left;
   position: relative;
-  overflow: hidden;
 }
 #articlesPart4 article:first-of-type {
-    height:400px;
+    height:37%;
+     margin-bottom: 5%;
     }
   #articlesPart4 article:last-of-type {
-    height:500px;
+    height:52%;
     }
 #articlesPart4 article img {
   width: 100vw;
   object-fit: contain;
 }
 #articlesPart4 article div {
-  height: 275px;
-  width: 100%;
+  /* height: 275px;
+  width: 100%; */
   background-color: rgba(16, 24, 32, 0.4);
-  position: absolute;
+  /* position: absolute;
+  bottom:0; */
 }
 
 #articlesPart4 article h3 {
@@ -184,6 +182,31 @@ pSec4.send();
     margin-bottom: 0%;
         height: 29vh;
   }
+    #articlesPart4 article img {
+    width: 100vw;
+    object-fit: cover;
+}
+  #articlesPart4 article:first-of-type {
+     margin-bottom:3%;
+  }
+    #articlesPart4 article:first-of-type img {
+     height: 100%;
+  }
+  #articlesPart4 article:first-of-type div{
+bottom: 0;
+    left: 0;
+    position: absolute;
+    padding-bottom: 3%;
+  }
+   #articlesPart4 article:last-of-type {
+    margin-bottom:3%;
+  }
+#articlesPart4 article:last-of-type div{
+bottom: 5px;
+    left: 0;
+    position: absolute;
+    padding-bottom: 3%;
+  }
   #articlesPart4 section {
     width: 100%;
     height: 500px;
@@ -191,23 +214,6 @@ pSec4.send();
   }
   #articlesPart4 section div {
     margin: -32% 3% 0% 3%;
-  }
-  #articlesPart4 article div{
-bottom:-41px;
-left:0;
-  }
-  #articlesPart4 article img {
-    width: 100vw;
-    object-fit: contain;
-}
-#articlesPart4 article:first-of-type {
-     margin-bottom:10%;
-  }
-  #articlesPart4 article:first-of-type img {
-     height: 100%;
-  }
-  #articlesPart4 article:last-of-type {
-     height: 505px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -218,26 +224,26 @@ left:0;
   }
   #articlesPart4 ul {
 padding: 1% 0;
-height:100%;
+height:100vh;
   }
  #articlesPart4 article {
     float: left;
   }
   #articlesPart4 article:first-of-type {
     height:300px;
+    width:100%;
     margin-bottom: 1.5%;
     }
     #articlesPart4 article:last-of-type {
     height: 435px;
+     width:100%;
 }
-  #articlesPart4 article:first-of-type img {
+  #articlesPart4 article img {
     width: 100%;
     object-fit: cover;
     }
   #articlesPart4 article:last-of-type img {
-    width: 100vw;
     height:40vh;
-    object-fit: cover;
     }
      #articlesPart4 article:last-of-type div {
     position: absolute;
@@ -285,31 +291,58 @@ height: 43vh;
 }
 }
 @media screen and (min-width: 1500px) {
+    #articlesPart4 ul {
+display:flex;
+height:33vh;
+margin-bottom: -5%;
+    }
   #articlesPart4 article h3,
   #articlesPart4 article p strong,
   #articlesPart4 p {
     width: 90%;
     margin-left: 5%;
   }
+  #articlesPart4 article:last-of-type {
+    height: 435px;
+    width: 49.5vw;
+    right: 0;
+    position: absolute;
+}
+ #articlesPart4 article:first-of-type  {
+    /* height: 275px; */
+        height: 435px;
+    width: 50vw;
+    left: 0;
+    position: absolute;
+}
   #articlesPart4 article:last-of-type div {
-    height: 275px;
+    height: 217px; 
+    bottom: 0;
+    padding-bottom: 3%;
+}
+ #articlesPart4 article:last-of-type img {
+    height:100%;
+    }
+    #articlesPart4 section div {
+    position:absolute;
+bottom:255px;
 }
 }
 @media screen and (min-width: 2000px) {
+  #articlesPart4 ul {
+    height: 33vh;
+}
 #articlesPart4 article {
     height: 23vh;
 }
-#articlesPart4 article img {
-    width: 100vw;
-    height: 24vh;
-    object-fit: fill;
-}
+
 #articlesPart4 section img {
     height: 800px;
     object-fit: cover;
 }
 #articlesPart4 section div {
-    margin: -25% 3% 0% 3%;
+position:absolute;
+bottom:25px;
 }
 #articlesPart4 section {
     margin-bottom: -17%;
