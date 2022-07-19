@@ -226,18 +226,18 @@ width:89vw;
 }
 @media screen and (min-width: 1200px) {
   #articlesPart1 {
-    margin: 4% 0% 0% 0%;
-        width: 97vw;
+    margin: 4% 1% 0% 1%;
+        width: 100vw;
   }
   
   #articlesPart1 article {
     width: 31vw;
     padding-right: 2%;
     margin: 3% 0% 0% 0%;
-     height: 9vh;
+     height: 130px;
   }
   #articlesPart1 article > div {
-    width: 30vw;
+    width: 29vw;
     height: 5vh;
 }
 #articlesPart1 img {

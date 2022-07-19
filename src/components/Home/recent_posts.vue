@@ -131,7 +131,8 @@ myHome.send();
 }
 @media screen and (min-width: 1200px) {
 #posts {
-   width: 97vw;
+   width: 98vw;
+   margin: 0 1%;
   }
   #posts > ul {
     margin-top: 7%;

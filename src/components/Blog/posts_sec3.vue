@@ -65,6 +65,9 @@ pSec3.send();
   height: auto;
   margin-bottom: 1%;
 }
+#articlesPart3 ul{
+padding:0;
+}
 #articlesPart3 article {
   width: 100vw;
   height: 435px;
@@ -73,7 +76,7 @@ pSec3.send();
   color: #ffd503;
   text-align: left;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #articlesPart3 article div {
   height: 190px;
@@ -115,6 +118,10 @@ pSec3.send();
 #articlesPart3 article:last-of-type div {
   background: url("../../assets/images/JG-Warm-Painterly-Background@2x.jpg");
 }
+#articlesPart3 article:first-of-type img, #articlesPart3 article:last-of-type img {
+    width: 100vw;
+    height: 415px;
+  }
 #articlesPart3 article:last-of-type div footer p{
 color: #bb9d06;
 }
@@ -127,9 +134,6 @@ color: #bb9d06;
   #articlesPart3 {
     margin-bottom: -10%;
 }
-  #articlesPart3 article:first-of-type img {
-    width: 100vw;;
-  }
   #articlesPart3 article:first-of-type div {
       height: 130px;
 }
@@ -145,27 +149,26 @@ color: #bb9d06;
 }
 @media screen and (min-width: 992px) {
   #articlesPart3 {
-    margin-bottom: 0%;
-    margin-top: 8%;
+    height: 84vh;
   }
   #articlesPart3 article {
    width: 100vw;
     float: left;
-    height: 500px;
+    height: 415px;
     margin-left: 1px;
     padding: 8px;
   }
   #articlesPart3 article:first-of-type div {
     height: 100px;
-    bottom: 10px;
-    right: -27px;
+    bottom: 20px;
+    right: -70px;
 }
 #articlesPart3 article:last-of-type div {
     height: 129px;
     width: 85%;
     border-radius: 25px;
-    right: -27px;
-    bottom: 10px;
+    right: -5px;
+    bottom: 20px;
 }
 #articlesPart3 footer {
     bottom: 5px;
@@ -178,11 +181,29 @@ color: #bb9d06;
 }
 @media screen and (min-width: 1200px) {
   #articlesPart3 {
-    margin-left: -14px;
+       display: flex;
+    justify-content: center;
+    margin-top: -2%;
+    height: 63vh;
+  }
+  #articlesPart3 ul {
+    display: flex;
+    justify-content: center;
   }
   #articlesPart3 article {
     padding: 7px;
+    height: 510px;
 }
+#articlesPart3 article:first-of-type div {
+    height: 100px;
+    bottom: 10px;
+    right: 9px;
+    width: 29vw;
+}
+#articlesPart3 article:first-of-type img, #articlesPart3 article:last-of-type img  {
+    height: 600px;
+}
+
 #articlesPart3 article:first-of-type div header{
     width:30vw;
 }

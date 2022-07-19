@@ -335,7 +335,7 @@ width:100%;
   }
   #events article section {
     height: 200px;
-    width: 100%;
+    width: 97.5%;
     border:1px solid #292828a4;
   }
   #events article section div {

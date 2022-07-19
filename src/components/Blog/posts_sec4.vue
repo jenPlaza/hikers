@@ -120,6 +120,9 @@ pSec4.send();
   width: 100vw;
   height: auto;
 }
+#articlesPart4 ul{
+  padding:0;
+}
 #articlesPart4 article {
   width: 100vw;
   margin-bottom: 5%;
@@ -159,18 +162,19 @@ pSec4.send();
   color: #ccaa00;
 }
 #articlesPart4 p {
-  margin: 4% 2% 0% 2%;
+  margin: 4% 3% -1% 3%;
+    text-align: justify;
 }
 #articlesPart4 section {
   width: 400px;
-  height: 550px;
+  height: 525px;
 }
 #articlesPart4 section img {
   width: 100vw;
   height:500px;
 }
 #articlesPart4 section div {
-  margin: -60% 10px 0 10px;
+  margin: -60% 30px 0 10px;
 }
 
 /* BREAKPOINTS*
@@ -190,7 +194,7 @@ pSec4.send();
   }
   #articlesPart4 article div{
 bottom:-41px;
-left:10px;
+left:0;
   }
   #articlesPart4 article img {
     width: 100vw;
@@ -205,18 +209,30 @@ left:10px;
   #articlesPart4 article:last-of-type {
      height: 505px;
   }
-  #articlesPart4 article:last-of-type img {
-     height: 36vh;
-  }
 }
 @media screen and (min-width: 992px) {
- #articlesPart4 article {
+  #articlesPart4  {
     width: 100vw;
-    float: left;
-    /* margin-top: 5%; */
+    height:70vh;
+    margin-top: 5.5%;
   }
+  #articlesPart4 ul {
+padding: 1% 0;
+height:100%;
+  }
+ #articlesPart4 article {
+    float: left;
+  }
+  #articlesPart4 article:first-of-type {
+    height:300px;
+    margin-bottom: 1.5%;
+    }
+    #articlesPart4 article:last-of-type {
+    height: 435px;
+}
   #articlesPart4 article:first-of-type img {
-    width: 142vw;
+    width: 100%;
+    object-fit: cover;
     }
   #articlesPart4 article:last-of-type img {
     width: 100vw;
@@ -225,24 +241,19 @@ left:10px;
     }
      #articlesPart4 article:last-of-type div {
     position: absolute;
-    bottom: 51px;
+    bottom: 0px;
     left:0;
     padding: 1px 5px;
+    height: 245px;
   }
-  #articlesPart4 section img {
-    height: 500px;
-    object-fit:cover;
-}
    #articlesPart4 section {
   width: 100vw;
     position: relative;
     margin-bottom: 10%;
   }
- #articlesPart4 article:first-of-type {
-    margin-bottom: 5%;
-}
-#articlesPart4 article:last-of-type {
-margin-bottom: -5%;
+  #articlesPart4 section img {
+    height: 500px;
+    object-fit:cover;
 }
   #articlesPart4 section div {
     margin: -25% 3% 0% 3%;
@@ -251,6 +262,7 @@ margin-bottom: -5%;
 @media screen and (min-width: 1200px) {
  #articlesPart4 {
 margin-left: -13px;
+height:66vh;
 }
   #articlesPart4 section {
     text-align: center;
@@ -259,10 +271,11 @@ margin-left: -13px;
 height: 43vh;
   }
   #articlesPart4 article:first-of-type div {
-    bottom: 19px;
+    bottom: 0;
 }
 #articlesPart4 article:last-of-type div {
-    bottom: 15px;
+    bottom: 5px;
+    height:275px;
 }
 #articlesPart4 section div {
     margin: -30% 3% 0% 3%;
@@ -278,6 +291,9 @@ height: 43vh;
     width: 90%;
     margin-left: 5%;
   }
+  #articlesPart4 article:last-of-type div {
+    height: 275px;
+}
 }
 @media screen and (min-width: 2000px) {
 #articlesPart4 article {
