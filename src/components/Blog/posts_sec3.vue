@@ -129,7 +129,7 @@ color: #bb9d06;
   / *====================================== */
 @media screen and (min-width: 768px) {
   #articlesPart3 article{
-    margin-bottom: 0%;
+    margin-bottom: 2%;
   }
   #articlesPart3 article:first-of-type div {
       height: 130px;
@@ -146,7 +146,8 @@ color: #bb9d06;
 }
 @media screen and (min-width: 992px) {
   #articlesPart3 {
-    height: 64vh;
+    height: 839px;
+    margin-bottom: 6%;
   }
   #articlesPart3 article {
    width: 100vw;
@@ -180,8 +181,8 @@ color: #bb9d06;
   #articlesPart3 {
        display: flex;
     justify-content: center;
-    margin-top: -2%;
-    height: 45vh;
+    margin-top: 2%;
+    height: 54vh;
   }
   #articlesPart3 ul {
     display: flex;
@@ -217,8 +218,9 @@ color: #bb9d06;
   }
 @media screen and (min-width: 1500px) {
   #articlesPart3 {
-    margin-top: 0%;
-      height: 43vh;
+       margin-top: 0%;
+    height: 527px;
+    margin-bottom: 122px;
   }
     #articlesPart3 article {
     width: 49vw;
@@ -251,7 +253,8 @@ color: #bb9d06;
     width: 99vw;
 } */
 #articlesPart3 {
-    height:42vh;
+    /* height:48vh; 
+    margin-bottom: 83px;*/
   }
 }
 </style>

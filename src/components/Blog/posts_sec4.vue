@@ -220,7 +220,7 @@ bottom: 5px;
   #articlesPart4  {
     width: 100vw;
     height:70vh;
-    margin-top: 5.5%;
+    margin-top: 2%;
   }
   #articlesPart4 ul {
 padding: 1% 0;
@@ -232,7 +232,7 @@ height:100vh;
   #articlesPart4 article:first-of-type {
     height:300px;
     width:100%;
-    margin-bottom: 1.5%;
+    margin-bottom: 4%;
     }
     #articlesPart4 article:last-of-type {
     height: 435px;
@@ -293,8 +293,8 @@ height: 43vh;
 @media screen and (min-width: 1500px) {
     #articlesPart4 ul {
 display:flex;
-height:33vh;
-margin-bottom: -5%;
+height:435px;
+margin-bottom: -7.3%;
     }
   #articlesPart4 article h3,
   #articlesPart4 article p strong,
@@ -329,20 +329,16 @@ bottom:255px;
 }
 }
 @media screen and (min-width: 2000px) {
-  #articlesPart4 ul {
-    height: 33vh;
-}
 #articlesPart4 article {
     height: 23vh;
 }
-
 #articlesPart4 section img {
-    height: 800px;
+    height: 300px;
     object-fit: cover;
 }
 #articlesPart4 section div {
 position:absolute;
-bottom:25px;
+bottom:300px;
 }
 #articlesPart4 section {
     margin-bottom: -17%;
