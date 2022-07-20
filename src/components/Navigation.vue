@@ -21,12 +21,12 @@ export default {
         {
           id: 1,
           text: 'Events',
-          page:'/hikers/events'
+          page:'/events'
         },
         {
           id: 2,
           text: 'Blog',
-          page:'/hikers/blog'
+          page:'/blog'
         },
       ]
     }
