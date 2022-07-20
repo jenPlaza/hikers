@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <h2 d="id03">Events</h2>
+      <h2 id="id03">Events</h2>
     </header>
     <section id="tab">
       <button class="tablinks active" @click="openTab(event, 'Today')">
@@ -59,6 +59,29 @@
 </template>
 
 <script>
+export default {
+    // eslint-disable-next-line vue/multi-word-component-names
+  name: "tabs",
+  methods: {
+     openTab: function (tabId, tabName) {
+        var x = document.getElementsByClassName("tabContent");
+       for (var i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+       }
+       document.getElementById(tabName).style.display = "block";
+      
+      // toggle buttons
+        var y  = document.getElementsByClassName("tablinks");
+        for (var p = 0; p < y.length; p++) {
+            // remove active class
+       y[p].className = y[p].className.replace(" active", "");
+        }
+      // get recent target and assign active
+       tabId.currentTarget.className += " active";
+      }
+  },
+};
+
 var myEvents = new XMLHttpRequest();
 myEvents.open("GET", "https://joshbloom.github.io/dws1/data/hikersguide.json");
 
@@ -164,29 +187,6 @@ function secThisMonth(dataEvents4) {
   articleEvents.innerHTML = htmlEvents4;
 }
 myEvents.send();
-
-export default {
-    // eslint-disable-next-line vue/multi-word-component-names
-  name: "tabs",
-  methods: {
-     openTab: function (tabId, tabName) {
-        var x = document.getElementsByClassName("tabContent");
-       for (var i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
-       }
-       document.getElementById(tabName).style.display = "block";
-      
-      // toggle buttons
-        var y  = document.getElementsByClassName("tablinks");
-        for (var p = 0; p < y.length; p++) {
-            // remove active class
-       y[p].className = y[p].className.replace(" active", "");
-        }
-      // get recent target and assign active
-       tabId.currentTarget.className += " active";
-      }
-  },
-};
 </script>
 <style>
 div header h2 {
