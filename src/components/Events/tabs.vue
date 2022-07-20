@@ -77,7 +77,7 @@ export default {
        y[p].className = y[p].className.replace(" active", "");
         }
       // get recent target and assign active
-       tabId.currentTarget.className += " active";
+       return tabId.currentTarget.className += " active";
       }
   },
 };
