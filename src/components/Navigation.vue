@@ -1,8 +1,11 @@
 <template>
   <div>
-<router-link onClick="window.location.reload();" class="nav" v-for="routes in links" 
+<!-- <router-link onClick="window.location.reload();" class="nav" v-for="routes in links" 
       v-bind:key="routes.id"
-      :to="`${routes.page}`">{{routes.text}}</router-link>
+      :to="`${routes.page}`">{{routes.text}}</router-link> -->
+      <router-link to="/">Home</router-link>
+      <router-link to="/events">Events</router-link>
+      <router-link to="/blog">Blog</router-link>
   </div>
 </template>
 
