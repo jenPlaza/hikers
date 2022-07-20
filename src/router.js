@@ -23,7 +23,7 @@ const routes= [
 ];
 
   const router = createRouter({
-    history: createWebHistory('/hikers/'),
+    history: createWebHistory('/hikers/', 'hikers/events'),
     routes,
   });
   
