@@ -1,11 +1,14 @@
 <template>
   <div>
-<router-link @click="window.location.reload();" class="nav" v-for="routes in links" 
+<!-- <router-link @click="window.location.reload();" class="nav" v-for="routes in links" 
       v-bind:key="routes.id"
-      :to="`${routes.page}`">{{routes.text}}</router-link>
+      :to="`${routes.page}`">{{routes.text}}</router-link> -->
       <!-- <router-link to="/">Home</router-link>
       <router-link to="/events">Events</router-link>
       <router-link to="/blog">Blog</router-link> -->
+         <router-link @click="location.reload();" to="/">Home</router-link>
+      <router-link @click="location.reload();" to="/events">Events</router-link>
+      <router-link @click="location.reload();" to="/blog">Blog</router-link>
   </div>
 </template>
 
