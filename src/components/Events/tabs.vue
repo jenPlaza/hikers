@@ -64,14 +64,14 @@ export default {
   name: "tabs",
   methods: {
      openTab: function (tabId, tabName) {
-        var x = document.getElementsByClassName("tabContent");
+        var x = document.querySelectorAll("tabContent");
        for (var i = 0; i < x.length; i++) {
          x[i].style.display = "none";
        }
        document.getElementById(tabName).style.display = "block";
       
       // toggle buttons
-        var y  = document.getElementsByClassName("tablinks");
+        var y  = document.querySelectorAll("tablinks");
         for (var p = 0; p < y.length; p++) {
             // remove active class
        y[p].className = y[p].className.replace(" active", "");
