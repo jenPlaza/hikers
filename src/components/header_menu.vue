@@ -41,7 +41,7 @@ export default {
   },
 };
 </script>
-script
+
 <style>
 .homePage {
   overflow: hidden;
