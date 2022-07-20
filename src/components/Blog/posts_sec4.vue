@@ -178,6 +178,9 @@ pSec4.send();
 /* BREAKPOINTS*
   / *====================================== */
 @media screen and (min-width: 768px) {
+    #articlesPart4 ul {
+     margin-bottom:0;
+    }
   #articlesPart4 article {
     margin-bottom: 0%;
         height: 29vh;
@@ -210,7 +213,7 @@ bottom: 5px;
   #articlesPart4 section {
     width: 100%;
     height: 500px;
-    margin: 7% 0 3%;
+    margin: 0;
   }
   #articlesPart4 section div {
     margin: -32% 3% 0% 3%;
@@ -219,12 +222,12 @@ bottom: 5px;
 @media screen and (min-width: 992px) {
   #articlesPart4  {
     width: 100vw;
-    height:70vh;
+    height:100%;
     margin-top: 2%;
   }
   #articlesPart4 ul {
 padding: 1% 0;
-height:100vh;
+height:800px;
   }
  #articlesPart4 article {
     float: left;
@@ -252,13 +255,14 @@ height:100vh;
     padding: 1px 5px;
     height: 245px;
   }
-   #articlesPart4 section {
-  width: 100vw;
-    position: relative;
-    margin-bottom: 10%;
-  }
+
+  #articlesPart4 section {
+    width: 100%;
+    height: 360px;
+    margin: 0;
+}
   #articlesPart4 section img {
-    height: 500px;
+    height: 350px;
     object-fit:cover;
 }
   #articlesPart4 section div {
@@ -268,10 +272,10 @@ height:100vh;
 @media screen and (min-width: 1200px) {
  #articlesPart4 {
 margin-left: -13px;
-height:66vh;
 }
   #articlesPart4 section {
     text-align: center;
+    height: 320px;
   }
 #articlesPart4 article img {
 height: 43vh;
@@ -284,17 +288,20 @@ height: 43vh;
     height:275px;
 }
 #articlesPart4 section div {
-    margin: -30% 3% 0% 3%;
+     margin: -18% 3% 0% 3%;
+    text-align: left;
 }
 #articlesPart4 article div {
     bottom: 20px;
 }
 }
 @media screen and (min-width: 1500px) {
+      #articlesPart4 {
+      margin-bottom: -5%;
+}
     #articlesPart4 ul {
 display:flex;
-height:435px;
-margin-bottom: -7.3%;
+height:425px;
     }
   #articlesPart4 article h3,
   #articlesPart4 article p strong,
@@ -324,21 +331,33 @@ margin-bottom: -7.3%;
     height:100%;
     }
     #articlesPart4 section div {
-    position:absolute;
-bottom:255px;
+margin-top: -13%
+}
+#articlesPart4 section img {
+object-position: 0 -1360px;
+}
+#articlesPart4 section div p{
+  margin:0;
 }
 }
 @media screen and (min-width: 2000px) {
+ #articlesPart4  {
+      height: 1000px;
+}
+#articlesPart4 ul {
+    display: flex;
+    height: 426px;
+}
 #articlesPart4 article {
     height: 23vh;
 }
 #articlesPart4 section img {
-    height: 300px;
+    height: 480px;
     object-fit: cover;
+      object-position: 0 -2472px;
 }
 #articlesPart4 section div {
-position:absolute;
-bottom:300px;
+  margin-top: -13%
 }
 #articlesPart4 section {
     margin-bottom: -17%;
