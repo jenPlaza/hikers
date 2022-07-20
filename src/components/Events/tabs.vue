@@ -59,29 +59,6 @@
 </template>
 
 <script>
-export default {
-    // eslint-disable-next-line vue/multi-word-component-names
-  name: "tabs",
-  methods: {
-     openTab: function (tabId, tabName) {
-        var x = document.getElementsByClassName("tabContent");
-       for (var i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
-       }
-       document.getElementById(tabName).style.display = "block";
-      
-      // toggle buttons
-        var y  = document.getElementsByClassName("tablinks");
-        for (var p = 0; p < y.length; p++) {
-            // remove active class
-       y[p].className = y[p].className.replace(" active", "");
-        }
-      // get recent target and assign active
-       tabId.currentTarget.className += " active";
-      }
-  },
-};
-
 var myEvents = new XMLHttpRequest();
 myEvents.open("GET", "https://joshbloom.github.io/dws1/data/hikersguide.json");
 
@@ -93,7 +70,6 @@ myEvents.onload = function() {
 };
 
 function secToday(dataEvents2) {
-  var htmlEvents2 = "<ul>";
    var imageArray = [
     require("@/assets/images/sunnytrees.png"),
     require("@/assets/images/File_017.png"),
@@ -102,7 +78,7 @@ function secToday(dataEvents2) {
     require("@/assets/images/photo-1507041957456-9c397ce39c97.jpg"),
     require("@/assets/images/File_013.png"),
   ];
-
+  var htmlEvents2 = "<ul>";
   for (var i = 0; i < dataEvents2.events.length; i++) {
     htmlEvents2 += "<li><article>";
     htmlEvents2 += '<img src="' + imageArray[i] + '"';
@@ -134,8 +110,6 @@ function secToday(dataEvents2) {
 }
 
 function secWeekend(dataEvents3) {
-  var htmlEvents3 = "<ul>";
-
   var imageArray = [
     require("@/assets/images/sunnytrees.png"),
     require("@/assets/images/File_017.png"),
@@ -144,7 +118,7 @@ function secWeekend(dataEvents3) {
     require("@/assets/images/File_015.png"),
     require("@/assets/images/File_013.png"),
   ];
-
+  var htmlEvents3 = "<ul>";
   for (var i = 2; i < dataEvents3.events.length; i++) {
    htmlEvents3 += "<li><article>";
     htmlEvents3 += '<img src="' + imageArray[i] + '"';
@@ -163,8 +137,6 @@ function secWeekend(dataEvents3) {
   articleEvents.innerHTML = htmlEvents3;
 }
 function secThisMonth(dataEvents4) {
-  var htmlEvents4 = "<ul>";
-
   var imageArray = [
     require("@/assets/images/sunnytrees.png"),
     require("@/assets/images/File_017.png"),
@@ -173,7 +145,7 @@ function secThisMonth(dataEvents4) {
     require("@/assets/images/File_018.png"),
     require("@/assets/images/File_019.png"),
   ];
-
+  var htmlEvents4 = "<ul>";
   for (var i = 3; i < dataEvents4.events.length; i++) {
     htmlEvents4 += "<li><article>";
     htmlEvents4 += '<img src="' + imageArray[i] + '"';
@@ -193,6 +165,28 @@ function secThisMonth(dataEvents4) {
 }
 myEvents.send();
 
+export default {
+    // eslint-disable-next-line vue/multi-word-component-names
+  name: "tabs",
+  methods: {
+     openTab: function (tabId, tabName) {
+        var x = document.getElementsByClassName("tabContent");
+       for (var i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+       }
+       document.getElementById(tabName).style.display = "block";
+      
+      // toggle buttons
+        var y  = document.getElementsByClassName("tablinks");
+        for (var p = 0; p < y.length; p++) {
+            // remove active class
+       y[p].className = y[p].className.replace(" active", "");
+        }
+      // get recent target and assign active
+       tabId.currentTarget.className += " active";
+      }
+  },
+};
 </script>
 <style>
 div header h2 {
