@@ -6,9 +6,9 @@
       <!-- <router-link to="/">Home</router-link>
       <router-link to="/events">Events</router-link>
       <router-link to="/blog">Blog</router-link> -->
-         <router-link @click="location.reload();" to="/">Home</router-link>
-      <router-link @click="location.reload();" to="/events">Events</router-link>
-      <router-link @click="location.reload();" to="/blog">Blog</router-link>
+         <router-link @click="window.location.reload();" to="/">Home</router-link>
+      <router-link @click="window.location.reload();" to="/events">Events</router-link>
+      <router-link @click="window.location.reload();" to="/blog">Blog</router-link>
   </div>
 </template>
 
