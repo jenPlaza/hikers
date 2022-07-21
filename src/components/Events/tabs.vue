@@ -59,30 +59,6 @@
 </template>
 
 <script>
-export default {
-    // eslint-disable-next-line vue/multi-word-component-names
-  name: "tabs",
-  methods: {
-     openTab: function (tabId, tabName) {
-      var x = document.querySelectorAll(".tabContent");
-        console.log(x.length)
-       for (var i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
-       }
-       document.getElementById(tabName).style.display = "block";
-      
-      // toggle buttons
-      var y = document.querySelectorAll(".tablinks");
-            console.log(x.length)
-        for (var p = 0; p < y.length; p++) {
-            // remove active class
-       y[p].className = y[p].className.replace(" active", "");
-        }
-      // get recent target and assign active
-        tabId.currentTarget.className += " active";
-      }
-  },
-};
 
 var myEvents = new XMLHttpRequest();
 myEvents.open("GET", "https://joshbloom.github.io/dws1/data/hikersguide.json");
@@ -189,6 +165,31 @@ function secThisMonth(dataEvents4) {
   articleEvents.innerHTML = htmlEvents4;
 }
 myEvents.send();
+
+export default {
+    // eslint-disable-next-line vue/multi-word-component-names
+  name: "tabs",
+  methods: {
+     openTab: function (tabId, tabName) {
+      var x = document.querySelectorAll(".tabContent");
+        console.log(x.length)
+       for (var i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+       }
+       document.getElementById(tabName).style.display = "block";
+      
+      // toggle buttons
+      var y = document.querySelectorAll(".tablinks");
+            console.log(x.length)
+        for (var p = 0; p < y.length; p++) {
+            // remove active class
+       y[p].className = y[p].className.replace(" active", "");
+        }
+      // get recent target and assign active
+        tabId.currentTarget.className += " active";
+      }
+  },
+};
 </script>
 <style>
 div header h2 {
