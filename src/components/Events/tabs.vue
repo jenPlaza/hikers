@@ -169,7 +169,7 @@ export default {
     // eslint-disable-next-line vue/multi-word-component-names
   name: "tabs",
   methods: {
-     openTab: function (tabId, tabName) {
+     openTab: function (e, tabName) {
       var x = document.querySelectorAll(".tabContent");
         console.log(x.length)
        for (var i = 0; i < x.length; i++) {
@@ -185,7 +185,7 @@ export default {
        y[p].className = y[p].className.replace(" active", "");
         }
       // get recent target and assign active
-        tabId.currentTarget.className += " active";
+        e.currentTarget.className += " active";
       }
   },
 };
