@@ -4,7 +4,8 @@
       <h2 id="id03">Events</h2>
     </header>
     <section id="tab">
-      <button class="tablinks active" @click="openTab(event, 'Today')">
+      <!-- <button class="tablinks active" @click="openTab(event, 'Today')"> -->
+        <button class="tablinks active" >
         Today
       </button>
        <button class="tablinks" @click="openTab(event, 'Weekend')">Weekend</button>
@@ -61,14 +62,12 @@
 <script>
 var myEvents = new XMLHttpRequest();
 myEvents.open("GET", "https://joshbloom.github.io/dws1/data/hikersguide.json");
-
 myEvents.onload = function() {
   var jsonEvents = JSON.parse(myEvents.responseText);
   secToday(jsonEvents);
   secWeekend(jsonEvents);
   secThisMonth(jsonEvents);
 };
-
 function secToday(dataEvents2) {
    var imageArray = [
     require("@/assets/images/sunnytrees.png"),
@@ -108,7 +107,6 @@ function secToday(dataEvents2) {
   var articleEvents = document.getElementById("Today");
   articleEvents.innerHTML = htmlEvents2;
 }
-
 function secWeekend(dataEvents3) {
   var imageArray = [
     require("@/assets/images/sunnytrees.png"),
@@ -164,7 +162,6 @@ function secThisMonth(dataEvents4) {
   articleEvents.innerHTML = htmlEvents4;
 }
 myEvents.send();
-
 export default {
     // eslint-disable-next-line vue/multi-word-component-names
   name: "tabs",
