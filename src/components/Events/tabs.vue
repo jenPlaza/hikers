@@ -59,7 +59,6 @@
 </template>
 
 <script>
-
 var myEvents = new XMLHttpRequest();
 myEvents.open("GET", "https://joshbloom.github.io/dws1/data/hikersguide.json");
 
