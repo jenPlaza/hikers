@@ -1,4 +1,3 @@
-
 import { createWebHistory, createRouter } from "vue-router";
 import Home from '@/views/index.vue';
 import Events from '@/views/events.vue';

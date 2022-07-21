@@ -1,15 +1,52 @@
 <template>
   <div id="app">
       <Header /> 
-   <router-view></router-view>
+   <router-view />
         <Footer />
   </div>
 </template>
 
 <script>
+
+import { createApp } from 'vue'
+import App from './App.vue'
+
+import { createWebHistory, createRouter } from "vue-router";
+import Home from '@/views/index.vue';
+import Events from '@/views/events.vue';
+import Blog from '@/views/blog.vue';
+
 import Header from './components/header_menu';
 import Footer from './components/footer';
-import router from './router';
+//import router from './router';
+
+
+const routes= [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home,
+  },
+  {
+    path: '/events',
+    name: 'Events',
+    component: Events,
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog,
+  }
+];
+
+  const router = createRouter({
+    history: createWebHistory('hikers'),
+    routes,
+  });
+
+const hikersApp = createApp(App)
+hikersApp.use(router)
+  hikersApp.mount('#app')
 
 export default {
   name: 'App',

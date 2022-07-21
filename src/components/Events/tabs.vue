@@ -4,8 +4,7 @@
       <h2 id="id03">Events</h2>
     </header>
     <section id="tab">
-      <!-- <button class="tablinks active" @click="openTab(event, 'Today')"> -->
-        <button class="tablinks active" >
+      <button class="tablinks active" @click="openTab(event, 'Today')">
         Today
       </button>
        <button class="tablinks" @click="openTab(event, 'Weekend')">Weekend</button>
