@@ -179,7 +179,6 @@ export default {
       
       // toggle buttons
       var y = document.querySelectorAll(".tablinks");
-            console.log(x.length)
         for (var p = 0; p < y.length; p++) {
             // remove active class
        y[p].className = y[p].className.replace(" active", "");
