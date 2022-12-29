@@ -1,4 +1,0 @@
-git clone https://github.com/jenPlaza/hikers
-
-git commit -m "empty commit"
-git push
