@@ -11,46 +11,42 @@
 </template>
 <script>
 export default {
-<<<<<<< HEAD
-  name: "section",
-};
-</script>
-
-<script>
-=======
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "section",
+  name: 'section',
 };
 
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
 var myHome = new XMLHttpRequest();
-myHome.open("GET", "https://joshbloom.github.io/dws1/data/hikersguide.json");
+myHome.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 
-myHome.onload = function() {
+myHome.onload = function () {
   var jsonHome = JSON.parse(myHome.responseText);
   secJoin(jsonHome);
 };
 function secJoin(dataHomeJoin) {
-<<<<<<< HEAD
-  var htmlHome2 = "<div>";
-  htmlHome2 += "<h2>JOIN THE ADVENTURE</h2>";
-  htmlHome2 += "<h3>" + dataHomeJoin.locations[4].title + "</h3>";
-  htmlHome2 += "<p>" + dataHomeJoin.locations[4].text + " </p>";
+  //  var htmlHome2 = "<div>";
+  //  htmlHome2 += "<h2>JOIN THE ADVENTURE</h2>";
+  // htmlHome2 += "<h3>" + dataHomeJoin.locations[4].title + "</h3>";
+  // htmlHome2 += "<p>" + dataHomeJoin.locations[4].text + " </p>";
+  // htmlHome2 +=
+  //  "<p>" +
+  //  dataHomeJoin.locations[4].city +
+  //   " | " +
+  //  dataHomeJoin.locations[4].state +
+  //  " </p>";
+  //    htmlHome2 += "</div>";
+  // htmlHome2 += "<img class="climb" alt=" climbers" src="../../assets/images/climber.png" />";
+
+  var htmlHome2 = '<h2>JOIN THE ADVENTURE</h2>';
+  htmlHome2 += '<h3>' + dataHomeJoin.locations[4].title + '</h3>';
+  htmlHome2 += '<p>' + dataHomeJoin.locations[4].text + ' </p>';
   htmlHome2 +=
-    "<p>" +
+    '<p>' +
     dataHomeJoin.locations[4].city +
-    " | " +
+    ' | ' +
     dataHomeJoin.locations[4].state +
-    " </p>";
-      htmlHome2 += "</div>";
- // htmlHome2 += "<img class="climb" alt=" climbers" src="../../assets/images/climber.png" />";
-=======
-  var htmlHome2 = "<h2>JOIN THE ADVENTURE</h2>";
-  htmlHome2 += "<h3>" + dataHomeJoin.locations[4].title + "</h3>";
-  htmlHome2 += "<p>" + dataHomeJoin.locations[4].text + " </p>";
-  htmlHome2 +="<p>" + dataHomeJoin.locations[4].city +" | " + dataHomeJoin.locations[4].state +" </p>";
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
-  var articleEvents = document.getElementById("join");
+    ' </p>';
+
+  var articleEvents = document.getElementById('join');
   articleEvents.innerHTML = htmlHome2;
 }
 myHome.send();
@@ -63,7 +59,7 @@ myHome.send();
   padding-right: 6%;
   background-color: #f0ae35;
   overflow: hidden;
-  width:100vw;
+  width: 100vw;
 }
 #join div {
   padding: 0 5%;
@@ -152,7 +148,7 @@ myHome.send();
   }
   #join h2 {
     padding: 4% 0% 0% 2%;
-}
+  }
   .climb {
     width: 75%;
     float: right;

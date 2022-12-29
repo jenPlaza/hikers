@@ -26,34 +26,32 @@
 </template>
 
 <script>
-import Navigation from "./Navigation";
+import Navigation from './Navigation';
 export default {
-  name: "header_menu",
+  name: 'header_menu',
   components: {
     Navigation,
   },
   data() {
     return {
       cssProps: {
-        backgroundImage: `url(${require("@/assets/images/hiking3.png")})`,
+        backgroundImage: `url(${require('@/assets/images/hiking3.png')})`,
       },
     };
   },
 };
 </script>
-<<<<<<< HEAD
-script
+
+<!-- //script //
 <style>
-.homePage {
-  overflow: hidden;
-  background: url("/images/hiking3.png") no-repeat -594px -176px;
-=======
+//.homePage {
+// overflow: hidden;
+// background: url("/images/hiking3.png") no-repeat -594px -176px; -->
 
 <style>
 .homePage {
   overflow: hidden;
-  background: url("../assets/images/hiking3.png") no-repeat -594px -176px;
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
+  background: url('../assets/images/hiking3.png') no-repeat -594px -176px;
   height: 475px;
 }
 nav {
@@ -62,7 +60,7 @@ nav {
   align-items: center;
   background-color: rgb(0, 0, 0, 0.3);
   white-space: nowrap;
-  height:6vh;
+  height: 6vh;
 }
 nav .logo {
   width: 100%;
@@ -73,14 +71,14 @@ nav .logo {
 nav > span {
   width: 10vw;
   padding-right: 2%;
-      margin-top: 3%;
+  margin-top: 3%;
 }
 nav > div {
   width: 90vw;
   display: flex;
   justify-content: end;
   white-space: nowrap;
-  padding-right:1%;
+  padding-right: 1%;
 }
 
 nav > div .nav {
@@ -101,20 +99,14 @@ nav > div > button:hover,
 }
 
 nav > div > button {
-<<<<<<< HEAD
-  padding-left: 2%;
-=======
-    padding: 0 1%;
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
+  /* padding-left: 2%; */
+  padding: 0 1%;
   background-color: transparent;
   outline: none;
   border: none;
   color: white;
-<<<<<<< HEAD
-=======
   font-size: 17px;
   font: 1em 'Program OT Book', Georgia, serif;
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
 }
 
 .dropdown-content {
@@ -141,8 +133,7 @@ nav > div > button:hover + .dropdown-content {
   background-color: #ffffff;
 }
 
-/* BREAKPOINTS*
-  / *====================================== */
+/* BREAKPOINTS*/
 @media screen and (min-width: 768px) {
   .homePage {
     height: 400px;
@@ -157,27 +148,21 @@ nav > div > button:hover + .dropdown-content {
     width: 80%;
   }
   .homePage {
-<<<<<<< HEAD
-    background: url(/img/hiking3.02b4fe91.png) no-repeat -462px -243px;
-=======
+    /* //background: url(/img/hiking3.02b4fe91.png) no-repeat -462px -243px; */
     background: url(../assets/images/hiking3.png) no-repeat -462px -243px;
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
   }
 }
 
 @media (min-width: 992px) {
-nav {
-  height:4vh;
-}
+  nav {
+    height: 4vh;
+  }
   nav > div .nav a {
     padding: 15px 35px;
   }
   .homePage {
-<<<<<<< HEAD
-    background: url(/img/hiking3.02b4fe91.png) no-repeat -443px -245px;
-=======
+    /* //background: url(/img/hiking3.02b4fe91.png) no-repeat -443px -245px; */
     background: url(../assets/images/hiking3.png) no-repeat -443px -245px;
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
   }
 }
 
@@ -186,34 +171,27 @@ nav {
     width: 25vw;
   }
   nav > div .nav a {
-<<<<<<< HEAD
-    padding: 15px 25px;
-=======
+    /* //padding: 15px 25px; */
     padding: 15px 29px;
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
   }
   nav .logo {
     width: 60%;
   }
 }
-@media (min-width: 1500px){
+@media (min-width: 1500px) {
   .homePage {
     height: 650px;
-<<<<<<< HEAD
-      background: url(/img/hiking3.02b4fe91.png) no-repeat 0px 0px;
-=======
-      background: url(../assets/images/hiking3.png)no-repeat 0px 0px;
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
-        background-size:100% 100%;
+    /* //background: url(/img/hiking3.02b4fe91.png) no-repeat 0px 0px; */
+    background: url(../assets/images/hiking3.png) no-repeat 0px 0px;
+    background-size: 100% 100%;
   }
-nav > div .nav {
+  nav > div .nav {
     width: 19vw;
-}
-
+  }
 }
 @media (min-width: 2000px) {
-nav > div .nav {
+  nav > div .nav {
     width: 14vw;
-}
+  }
 }
 </style>

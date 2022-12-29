@@ -53,19 +53,15 @@
 </template>
 <script>
 export default {
-<<<<<<< HEAD
-=======
-    // eslint-disable-next-line vue/multi-word-component-names
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
-  name: "bottom",
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'bottom',
 };
 </script>
 <style>
-<<<<<<< HEAD
-footer:not(footer.btns):not(#posts footer){
-=======
-footer:not(footer.btns):not(#posts footer):not(#articlesPart1 footer):not(#articlesPart3 footer){
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
+/* //footer:not(footer.btns):not(#posts footer){ */
+footer:not(footer.btns):not(#posts footer):not(#articlesPart1 footer):not(
+    #articlesPart3 footer
+  ) {
   text-align: center;
   color: #eeeeee;
   display: flex;
@@ -106,11 +102,8 @@ footer h4 {
   transform: scale(1.1);
 }
 #signUp .submit {
-<<<<<<< HEAD
-  height: 36px;
-=======
+  /* //height: 36px; */
   height: 60px;
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
   width: 75px;
   background-color: transparent;
   border: none;
@@ -132,16 +125,15 @@ footer h4 {
   #followUs {
     width: 96vw;
   }
-<<<<<<< HEAD
-}
-@media (min-width: 992px) {
- footer:not(footer.btns):not(#posts footer){
-=======
 
+  /* //}
+  //@media (min-width: 992px) {
+  //footer:not(footer.btns):not(#posts footer){ */
 }
 @media (min-width: 992px) {
- footer:not(footer.btns):not(#posts footer):not(#articlesPart1 footer):not(#articlesPart3 footer){
->>>>>>> 4880d4685353d76121b3559c899b5cb5bc40fe35
+  footer:not(footer.btns):not(#posts footer):not(#articlesPart1 footer):not(
+      #articlesPart3 footer
+    ) {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -159,11 +151,11 @@ footer h4 {
   }
 }
 
-@media(min-width: 1500px){
-#support,
+@media (min-width: 1500px) {
+  #support,
   #signUp,
   #followUs {
-     height: 265px;
+    height: 265px;
   }
 }
 </style>

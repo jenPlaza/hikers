@@ -1,12 +1,11 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
- <section
-      class="body"
-      >
-     <RecentPosts />
-         <Join />
-          <SignUp />
-           <UpcomingMembersAbout />
-   </section>
+  <section class="body">
+    <RecentPosts />
+    <Join />
+    <SignUp />
+    <UpcomingMembersAbout />
+  </section>
 </template>
 
 <script>
@@ -15,12 +14,13 @@ import Join from '../components/Home/join';
 import SignUp from '../components/Home/signup';
 import UpcomingMembersAbout from '../components/Home/upcoming_member_about';
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: 'index',
   components: {
-  RecentPosts,
-  Join,
-  SignUp,
-  UpcomingMembersAbout,
-  }
-}
+    RecentPosts,
+    Join,
+    SignUp,
+    UpcomingMembersAbout,
+  },
+};
 </script>
