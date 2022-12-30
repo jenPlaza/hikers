@@ -197,30 +197,6 @@ function secThisMonth(dataEvents4) {
   articleEvents.innerHTML = htmlEvents4;
 }
 myEvents.send();
-
-//export default {
-// eslint-disable-next-line vue/multi-word-component-names
-//name: "tabs",
-//methods: {
-// openTab: function (e, tabName) {
-// var x = document.querySelectorAll(".tabContent");
-//   console.log(x.length)
-// for (var i = 0; i < x.length; i++) {
-//   x[i].style.display = "none";
-//  }
-//  document.getElementById(tabName).style.display = "block";
-
-// toggle buttons
-// var y = document.querySelectorAll(".tablinks");
-//  for (var p = 0; p < y.length; p++) {
-// remove active class
-// y[p].className = y[p].className.replace(" active", "");
-//  }
-// get recent target and assign active
-//   e.currentTarget.className += " active";
-// }
-//},
-//};
 </script>
 <style>
 div header h2 {
@@ -229,7 +205,7 @@ div header h2 {
 }
 #tab {
   overflow: hidden;
-  width: 99.5%;
+  width: 100%;
 }
 #tab button {
   float: left;
@@ -237,7 +213,7 @@ div header h2 {
   border: none;
   background-color: transparent;
   outline: none;
-  padding: 14px 30px;
+  padding: 14px 18px;
   transition: 0.3s;
   font-size: 22px;
   text-align: center;
@@ -253,7 +229,7 @@ div header h2 {
 #events {
   background-color: #292828;
   margin-bottom: 15%;
-  width: 95vw;
+  width: 100%;
   text-align: center;
   padding-bottom: 1.5%;
 }
@@ -316,12 +292,15 @@ div header h2 {
   }
 }
 @media screen and (min-width: 992px) {
+  #events {
+    width: 100vw;
+  }
   div header h2 {
     padding: 3% 0 0% 4%;
   }
   #events > section > section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     list-style-type: none;
     padding: 0;
     position: relative;
@@ -331,7 +310,7 @@ div header h2 {
     border: 1px solid #292828;
     width: calc(100% / 2.1);
     margin-bottom: -2%;
-    height: 28vh;
+    height: 35vh;
   }
   #events article img {
     height: 17vh;
@@ -361,7 +340,6 @@ div header h2 {
   }
   #events > section > section {
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-    width: 95vw;
   }
   #events article {
     height: 353px;
@@ -383,10 +361,8 @@ div header h2 {
     margin: -2% 0% -7% 0%;
   }
   #events {
-    margin: 0 0 0 -1%;
-    width: 94vw;
-    padding-bottom: 0;
-    height: 1028px;
+    width: 100%;
+    margin-bottom: 2%;
   }
   #events > section > section {
     width: 94vw;

@@ -87,7 +87,7 @@ h3 {
     width: calc(100% / 3.2);
     margin: 0;
     padding: 0;
-    height: 8vh;
+    height: 10vh;
     margin: 0% 0 3% 0;
   }
   #filter article:nth-child(1) {

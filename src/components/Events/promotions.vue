@@ -170,7 +170,7 @@ export default {
   border-color: #292828;
   background-color: transparent;
   height: 60px;
-  width: 55vw;
+  width: 75vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -311,9 +311,19 @@ h3 {
   }
   #misc .btns {
     height: 1vh;
+    margin-top: 5em;
   }
   #misc .btnL {
     padding: 10px 45px;
+  }
+  #misc article {
+    display: flex;
+    flex-direction: column;
+  }
+  #misc .btnBuy,
+  #misc .btnL {
+    align-self: flex-start;
+    margin-top: 2em;
   }
 }
 @media screen and (min-width: 1500px) {
@@ -327,7 +337,11 @@ h3 {
     margin-top: -4%;
   }
   #promos section:last-of-type {
-    margin: 9% 0 3% 0%;
+    margin: 13% 0 3% 0%;
+  }
+  #misc article p,
+  #events article section p {
+    margin-bottom: 17px;
   }
 }
 @media screen and (min-width: 2000px) {
