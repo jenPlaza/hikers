@@ -81,6 +81,9 @@ function secEvents(dataHome) {
 myHome.send();
 </script>
 <style>
+#posts header h2 {
+  margin-left: 3%;
+}
 #posts > ul {
   padding: 0;
   width: 100vw;
@@ -141,11 +144,13 @@ myHome.send();
     width: 100%;
     columns: 2;
   }
+  #posts header h2 {
+    margin-left: 2%;
+  }
 }
 @media screen and (min-width: 1200px) {
   #posts {
-    width: 98vw;
-    margin: 0 1%;
+    width: 100%;
   }
   #posts > ul {
     margin-top: 7%;

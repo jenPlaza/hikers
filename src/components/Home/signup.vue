@@ -49,12 +49,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  background: url(../../assets/images/right.png) no-repeat;
-
-  /* background: url(/images/right.png) no-repeat;
-  background-color: transparent; */
-
+  background-color: transparent;
   border: none;
 }
 #sign .button > img {

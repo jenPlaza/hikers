@@ -1,28 +1,29 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import { createWebHistory, createRouter } from 'vue-router';
+import Home from '@/views/index.vue';
+import Events from '@/views/events.vue';
+import Blog from '@/views/blog.vue';
 
-import Home from '@/pages/index.vue';
-import Events from '@/pages/events.vue';
-import Blog from '@/pages/blog.vue';
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home,
+  },
+  {
+    path: '/events',
+    name: 'Events',
+    component: Events,
+  },
+  {
+    path: '/blog',
+    name: 'Blog',
+    component: Blog,
+  },
+];
 
-Vue.use(Router);
-
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home,
-    },
-    {
-      path: '/events',
-      name: 'events',
-      component: Events,
-    },
-    {
-      path: '/blog',
-      name: 'blog',
-      component: Blog,
-    },
-  ],
+const router = createRouter({
+  history: createWebHistory('/hikers/'),
+  routes,
 });
+
+export default router;

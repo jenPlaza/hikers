@@ -285,10 +285,10 @@ myHome.send();
     width: 275px;
     height: 150px;
   }
-  #members h3,
+  /* #members h3,
   #mEvents h3 {
     margin-left: 12%;
-  }
+  } */
 }
 @media screen and (min-width: 1500px) {
   #members {

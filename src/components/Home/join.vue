@@ -56,10 +56,10 @@ myHome.send();
 #join {
   height: 350px;
   margin: 0% 0% -20% 0%;
-  padding-right: 6%;
+  padding: 5%;
   background-color: #f0ae35;
   overflow: hidden;
-  width: 100vw;
+  width: 99%;
 }
 #join div {
   padding: 0 5%;
@@ -108,7 +108,7 @@ myHome.send();
     margin: 5% 0% -20% 0%;
   }
   #join h2 {
-    padding: 4% 0% 0% 0%;
+    padding: 0%;
   }
   #join h3,
   #join p {
@@ -129,9 +129,6 @@ myHome.send();
   }
 }
 @media screen and (min-width: 1200px) {
-  #join h2 {
-    padding: 4% 0% 0% 3%;
-  }
   .climb {
     width: 90%;
     margin-top: -2%;
@@ -147,7 +144,7 @@ myHome.send();
     margin: 7% 0% 7% 0%;
   }
   #join h2 {
-    padding: 4% 0% 0% 2%;
+    padding: 0%;
   }
   .climb {
     width: 75%;

@@ -21,57 +21,65 @@
 
     <section id="events">
       <!-- ThisMonth -->
-      <section id="ThisMonth" class="tabContent" style="display:block">
-        <ul><article>
-          <img src="../../assets/images/sunnytrees.png" alt="Alternate Text" />
-          <section>
-            <h3>Lorem Ipsum</h3>
-            <p>May 4</p>
-            <p>
-              <strong
-                >Dessert gingerbread lollipop pudding cheesecake gummies.
-              </strong>
-            </p>
-            <p><strong>State</strong></p>
-          </section>
+      <section id="ThisMonth" class="tabContent" style="display: block">
+        <ul>
+          <article>
+            <img
+              src="../../assets/images/sunnytrees.png"
+              alt="Alternate Text"
+            />
+            <section>
+              <h3>Lorem Ipsum</h3>
+              <p>May 4</p>
+              <p>
+                <strong
+                  >Dessert gingerbread lollipop pudding cheesecake gummies.
+                </strong>
+              </p>
+              <p><strong>State</strong></p>
+            </section>
           </article>
         </ul>
       </section>
       <!-- Weekend -->
       <section id="Weekend" class="tabContent">
-        <ul><article>
-          <img src="../../assets/images/File_014.png" alt="Alternate Text" />
-          <section>
-            <h3>Weekday Wanderer - Caledon State Park</h3>
-            <p>2016-11-10</p>
-            <p><strong>3401 Courthouse Road North Chesterfield </strong></p>
-            <p><strong>VA</strong></p>
-          </section>
-        </article></ul>
+        <ul>
+          <article>
+            <img src="../../assets/images/File_014.png" alt="Alternate Text" />
+            <section>
+              <h3>Weekday Wanderer - Caledon State Park</h3>
+              <p>2016-11-10</p>
+              <p><strong>3401 Courthouse Road North Chesterfield </strong></p>
+              <p><strong>VA</strong></p>
+            </section>
+          </article>
+        </ul>
       </section>
 
       <!-- Today -->
       <section id="Today" class="tabContent">
-        <ul><article>
-          <img src="../../assets/images/File_019.png" alt="Alternate Text" />
-          <section>
-            <h3>Bear Mountain State Park</h3>
-            <p>2019-11-04</p>
-            <p><strong>Route 9W North, Bear Mountain </strong></p>
-            <p><strong>NY</strong></p>
-          </section>
-        </article></ul>
+        <ul>
+          <article>
+            <img src="../../assets/images/File_019.png" alt="Alternate Text" />
+            <section>
+              <h3>Bear Mountain State Park</h3>
+              <p>2019-11-04</p>
+              <p><strong>Route 9W North, Bear Mountain </strong></p>
+              <p><strong>NY</strong></p>
+            </section>
+          </article>
+        </ul>
       </section>
     </section>
   </div>
 </template>
 
 <script>
-
 export default {
+  // eslint-disable-next-line vue/multi-word-component-names
   name: 'tabs',
   methods: {
-    openTab: function(tabId, tabName) {
+    openTab: function (tabId, tabName) {
       //var target = e.target.id;
       var x = document.getElementsByClassName('tabContent');
       //console.log('x: ', x);
@@ -97,7 +105,6 @@ export default {
   },
 };
 
-
 var imageArray = [
   require('@/assets/images/sunnytrees.png'),
   require('@/assets/images/File_017.png'),
@@ -108,8 +115,8 @@ var imageArray = [
 ];
 
 var myEvents = new XMLHttpRequest();
-myEvents.open("GET", "https://joshbloom.github.io/dws1/data/hikersguide.json");
-myEvents.onload = function() {
+myEvents.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
+myEvents.onload = function () {
   var jsonEvents = JSON.parse(myEvents.responseText);
   secToday(jsonEvents);
   secWeekend(jsonEvents);
@@ -192,27 +199,27 @@ function secThisMonth(dataEvents4) {
 myEvents.send();
 
 //export default {
-    // eslint-disable-next-line vue/multi-word-component-names
-  //name: "tabs",
-  //methods: {
-    // openTab: function (e, tabName) {
-     // var x = document.querySelectorAll(".tabContent");
-     //   console.log(x.length)
-      // for (var i = 0; i < x.length; i++) {
-      //   x[i].style.display = "none";
-     //  }
-     //  document.getElementById(tabName).style.display = "block";
-      
-      // toggle buttons
-     // var y = document.querySelectorAll(".tablinks");
-      //  for (var p = 0; p < y.length; p++) {
-            // remove active class
-      // y[p].className = y[p].className.replace(" active", "");
-      //  }
-      // get recent target and assign active
-     //   e.currentTarget.className += " active";
-     // }
-  //},
+// eslint-disable-next-line vue/multi-word-component-names
+//name: "tabs",
+//methods: {
+// openTab: function (e, tabName) {
+// var x = document.querySelectorAll(".tabContent");
+//   console.log(x.length)
+// for (var i = 0; i < x.length; i++) {
+//   x[i].style.display = "none";
+//  }
+//  document.getElementById(tabName).style.display = "block";
+
+// toggle buttons
+// var y = document.querySelectorAll(".tablinks");
+//  for (var p = 0; p < y.length; p++) {
+// remove active class
+// y[p].className = y[p].className.replace(" active", "");
+//  }
+// get recent target and assign active
+//   e.currentTarget.className += " active";
+// }
+//},
 //};
 </script>
 <style>

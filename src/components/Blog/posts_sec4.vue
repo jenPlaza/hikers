@@ -63,8 +63,7 @@
 export default {
   name: 'posts_sec4',
 };
-</script>
-<script>
+
 var pSec4 = new XMLHttpRequest();
 pSec4.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 
