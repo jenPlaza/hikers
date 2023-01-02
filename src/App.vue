@@ -1,7 +1,7 @@
 <template>
   <div :style="cssProps" id="app">
     <Header />
-    <router-view></router-view>
+    <router-view :key="$route.fullPath"></router-view>
     <Footer />
   </div>
 </template>
@@ -9,7 +9,6 @@
 <script>
 import Header from './components/header_menu';
 import Footer from './components/footer';
-import router from './router';
 
 export default {
   name: 'App',
@@ -17,7 +16,6 @@ export default {
     Header,
     Footer,
   },
-  router,
   data() {
     return {
       cssProps: {
