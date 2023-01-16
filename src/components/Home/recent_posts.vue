@@ -36,51 +36,7 @@
   </main>
 </template>
 
-<script>
-export default {
-  name: 'recent_posts',
-};
-
-// var myHome = new XMLHttpRequest();
-// myHome.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
-
-// myHome.onload = function () {
-//   var jsonHome = JSON.parse(myHome.responseText);
-//   secEvents(jsonHome);
-// };
-// function secEvents(dataHome) {
-//   var htmlHome = '<header>';
-//   htmlHome += '<h2 id="id02">Recent Posts</h2>';
-//   htmlHome += '</header>';
-//   htmlHome += '<ul>';
-//   for (var i = 0; i < dataHome.posts.length; i++) {
-//     htmlHome +=
-//       '<li><article style="background-image: url(' +
-//       dataHome.posts[i].imageURL +
-//       ')">';
-//     htmlHome += '<section>';
-//     htmlHome += '<header><h3>' + dataHome.posts[i].title + '</h3></header>';
-//     htmlHome += '<p><strong>' + dataHome.posts[i].subtitle + '</strong></p>';
-//     htmlHome += '<div>';
-//     htmlHome += '<input type="button" value="View More" class="seeMore" / >';
-//     htmlHome += '</div>';
-//     htmlHome += '</section>';
-//     htmlHome += '<footer>';
-//     htmlHome += '<span>';
-//     htmlHome += '<p>by ' + dataHome.posts[i].author + '</p>';
-//     htmlHome += '<p>' + dataHome.posts[i].postDate + '</p>';
-//     htmlHome += '<p>' + dataHome.posts[i].moreLink + '</p>';
-//     htmlHome += '</span>';
-//     htmlHome += '</footer>';
-//     htmlHome += '</article></li>';
-//   }
-//   htmlHome += '</ul>';
-//   var articleBlog = document.getElementById('posts');
-//   articleBlog.innerHTML = htmlHome;
-// }
-// myHome.send();
-//
-</script>
+<script src="../../../js/index.js"></script>
 <style>
 #posts header h2 {
   margin-left: 3%;

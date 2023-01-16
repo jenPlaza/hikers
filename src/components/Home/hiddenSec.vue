@@ -1,38 +1,36 @@
 <template>
-  <div>
-    <div id="articlesPart1">
-      <ul>
-        <article>
-          <img src="../../assets/images/hikers1003.jpg" alt="hikers" />
+  <div id="articlesPart1">
+    <ul>
+      <article>
+        <img src="../../assets/images/hikers1003.jpg" alt="hikers" />
 
-          <header>
-            <h3>Dolor Sit Amet</h3>
-          </header>
-          <body>
-            <p><strong>May 4</strong></p>
-          </body>
-          <footer>
-            <dl>
-              <dt></dt>
-              <dd><strong>by Jen Plaza</strong></dd>
-              <dt></dt>
-              <dd><strong>Sep 12, 2012</strong></dd>
-              <dt></dt>
-              <dd><strong>lollipop </strong></dd>
-            </dl>
-          </footer>
-        </article>
-      </ul>
-    </div>
+        <header>
+          <h3>Dolor Sit Amet</h3>
+        </header>
+        <body>
+          <p><strong>May 4</strong></p>
+        </body>
+        <footer>
+          <dl>
+            <dt></dt>
+            <dd><strong>by Jen Plaza</strong></dd>
+            <dt></dt>
+            <dd><strong>Sep 12, 2012</strong></dd>
+            <dt></dt>
+            <dd><strong>lollipop </strong></dd>
+          </dl>
+        </footer>
+      </article>
+    </ul>
   </div>
 </template>
 
 <script src="../../../js/blog.js"></script>
 
 <style>
-/* #articlesPart1 {
+#articlesPart1 {
   visibility: visible;
-} */
+}
 #blog header h2 {
   padding: 2% 0px 5px 3%;
   color: #f0ae35;

@@ -1,3 +1,4 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <section>
     <div id="join">
@@ -9,48 +10,6 @@
     <img class="climb" alt=" climbers" src="../../assets/images/climber.png" />
   </section>
 </template>
-<script>
-export default {
-  // eslint-disable-next-line vue/multi-word-component-names
-  name: 'section',
-};
-
-var myHome = new XMLHttpRequest();
-myHome.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
-
-myHome.onload = function () {
-  var jsonHome = JSON.parse(myHome.responseText);
-  secJoin(jsonHome);
-};
-function secJoin(dataHomeJoin) {
-  //  var htmlHome2 = "<div>";
-  //  htmlHome2 += "<h2>JOIN THE ADVENTURE</h2>";
-  // htmlHome2 += "<h3>" + dataHomeJoin.locations[4].title + "</h3>";
-  // htmlHome2 += "<p>" + dataHomeJoin.locations[4].text + " </p>";
-  // htmlHome2 +=
-  //  "<p>" +
-  //  dataHomeJoin.locations[4].city +
-  //   " | " +
-  //  dataHomeJoin.locations[4].state +
-  //  " </p>";
-  //    htmlHome2 += "</div>";
-  // htmlHome2 += "<img class="climb" alt=" climbers" src="../../assets/images/climber.png" />";
-
-  var htmlHome2 = '<h2>JOIN THE ADVENTURE</h2>';
-  htmlHome2 += '<h3>' + dataHomeJoin.locations[4].title + '</h3>';
-  htmlHome2 += '<p>' + dataHomeJoin.locations[4].text + ' </p>';
-  htmlHome2 +=
-    '<p>' +
-    dataHomeJoin.locations[4].city +
-    ' | ' +
-    dataHomeJoin.locations[4].state +
-    ' </p>';
-
-  var articleEvents = document.getElementById('join');
-  articleEvents.innerHTML = htmlHome2;
-}
-myHome.send();
-</script>
 
 <style>
 #join {

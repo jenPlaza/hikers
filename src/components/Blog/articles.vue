@@ -4,10 +4,11 @@
       <header>
         <h2>Posts</h2>
       </header>
-      <PostsSec1></PostsSec1>
+      <PostsSec1 style="display: block" />
     </section>
     <section>
-      <RecentPosts id="recent"></RecentPosts>
+      <!-- <RecentPosts id="recent"></RecentPosts> -->
+      <RecentPosts />
       <PostsSec3> </PostsSec3>
       <PostsSec4> </PostsSec4>
     </section>

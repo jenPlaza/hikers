@@ -1,7 +1,4 @@
-﻿//testing
-//alert("hello");
-
-var myHome = new XMLHttpRequest();
+﻿var myHome = new XMLHttpRequest();
 myHome.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 
 myHome.onload = function () {
@@ -14,40 +11,40 @@ myHome.onload = function () {
 };
 
 function secEvents(dataHome) {
-  var htmlHome = '';
-
-  var posts = document.getElementById('id02');
-  htmlHome = '<h2>Recent Posts</h2>';
-  posts.innerHTML = htmlHome;
+  var htmlHome = '<header>';
+  htmlHome += '<h2 id="id02">Recent Posts</h2>';
+  htmlHome += '</header>';
+  htmlHome += '<ul>';
 
   for (var i = 0; i < dataHome.posts.length; i++) {
-    htmlHome += '<article>';
-    htmlHome += '<img src="' + dataHome.posts[i].imageURL + '"';
-    htmlHome += 'alt="' + dataHome.posts[i].subtitle + '"/>';
-    htmlHome += '<h3>' + dataHome.posts[i].title + '</h3>';
+    htmlHome +=
+      '<li><article style="background-image: url(' +
+      dataHome.posts[i].imageURL +
+      ')">';
+    htmlHome += '<section>';
+    htmlHome += '<header><h3>' + dataHome.posts[i].title + '</h3></header>';
     htmlHome += '<p><strong>' + dataHome.posts[i].subtitle + '</strong></p>';
-    htmlHome += '<dl>';
-    htmlHome += '<dt></dt>';
-    htmlHome += '<dd>by ' + dataHome.posts[i].author + '</dd>';
-    htmlHome += '<dt></dt>';
-    htmlHome += '<dd>' + dataHome.posts[i].postDate + '</dd>';
-    htmlHome += '<dt></dt>';
-    htmlHome += '<dd>' + dataHome.posts[i].moreLink + '</dd>';
-    htmlHome += '</dl>';
-
-    htmlHome += '</article>';
+    htmlHome += '<div>';
+    htmlHome += '<input type="button" value="View More" class="seeMore" / >';
+    htmlHome += '</div>';
+    htmlHome += '</section>';
+    htmlHome += '<footer>';
+    htmlHome += '<span>';
+    htmlHome += '<p>by ' + dataHome.posts[i].author + '</p>';
+    htmlHome += '<p>' + dataHome.posts[i].postDate + '</p>';
+    htmlHome += '<p>' + dataHome.posts[i].moreLink + '</p>';
+    htmlHome += '</span>';
+    htmlHome += '</footer>';
+    htmlHome += '</article></li>';
   }
+  htmlHome += '</ul>';
   var articleBlog = document.getElementById('posts');
   articleBlog.innerHTML = htmlHome;
 }
 
 function secJoin(dataHomeJoin) {
-  var htmlHome2 = '';
-
-  htmlHome2 +=
-    '<img src="/HikersGuide/images/climbers.png" alt="Alternate Text" />';
-  htmlHome2 += '<section>';
-  htmlHome2 += '<h1>' + dataHomeJoin.locations[4].title + '</h1>';
+  var htmlHome2 = '<h2>JOIN THE ADVENTURE</h2>';
+  htmlHome2 += '<h3>' + dataHomeJoin.locations[4].title + '</h3>';
   htmlHome2 += '<p>' + dataHomeJoin.locations[4].text + ' </p>';
   htmlHome2 +=
     '<p>' +
@@ -55,7 +52,6 @@ function secJoin(dataHomeJoin) {
     ' | ' +
     dataHomeJoin.locations[4].state +
     ' </p>';
-  htmlHome2 += '</section>';
 
   var articleEvents = document.getElementById('join');
   articleEvents.innerHTML = htmlHome2;
@@ -99,7 +95,7 @@ function secMiscMEvents(dataHomeMEvents) {
 
   htmlHome4 += '<section>';
 
-  for (i = 0; i < dataHomeMEvents.events.length; i++) {
+  for (var i = 0; i < dataHomeMEvents.events.length; i++) {
     htmlHome4 +=
       '<img src="/HikersGuide/design/calendar-2.png" alt="Alternate Text" />';
     htmlHome4 += '<p><strong>' + dataHomeMEvents.events[i].title + '</strong>';
@@ -123,5 +119,4 @@ function secMiscAbout(dataHomeAbout) {
   var articleBlog = document.getElementById('about');
   articleBlog.innerHTML = htmlHome5;
 }
-
 myHome.send();
