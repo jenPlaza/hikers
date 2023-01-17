@@ -1,23 +1,25 @@
 <template>
-  <section id="sign">
-    <p>
-      The biggest advebture of your life is right aruond the corner.
-      <br />
-      <button class="button" onclick="openForm()">
-        <strong> Sign up Now!</strong
-        ><img src="../../assets/images/arrow.png" alt="arrow" />
-      </button>
-    </p>
+  <div>
+    <section id="sign">
+      <p>
+        The biggest advebture of your life is right aruond the corner.
+        <br />
+        <button class="button" onclick="openForm()">
+          <strong> Sign up Now!</strong
+          ><img src="../../assets/images/arrow.png" alt="arrow" />
+        </button>
+      </p>
 
-    <!--popop form-->
-    <form id="mailingList">
-      <label for="email"><b>Email</b></label>
+      <!--popop form-->
+      <form id="mailingList">
+        <label for="email"><b>Email</b></label>
 
-      <input type="text" placeholder="Enter Email" name="email" />
+        <input type="text" placeholder="Enter Email" name="email" />
 
-      <button id="buttonS" type="submit" class="buttonS">Submit</button>
-    </form>
-  </section>
+        <button id="buttonS" type="submit" class="buttonS">Submit</button>
+      </form>
+    </section>
+  </div>
 </template>
 
 <script>

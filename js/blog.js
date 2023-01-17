@@ -72,39 +72,43 @@ function secALevel2(data2) {
   var articleBlog = document.getElementById('aLevel2');
   articleBlog.innerHTML = htmlArticle2;
 }
-function secALevel3(data3) {
-  var htmlArticle3 = '<section>';
-  htmlArticle3 +=
-    '<img src="/HikersGuide/design/white.jpg" alt="Alternate Text" />';
-  htmlArticle3 += '<section>';
-  htmlArticle3 += '<p><strong>' + data3.locations[0].title + '</strong></p>';
-  htmlArticle3 += '<h3>' + data3.locations[0].text + '</h3>';
-  htmlArticle3 += '</section>';
-  htmlArticle3 += '<dl>';
-  htmlArticle3 += '<dt><strong>by ' + data3.posts[0].author + '</strong></dt>';
-  htmlArticle3 += '<dt><strong>' + data3.posts[0].postDate + '</strong></dt>';
-  htmlArticle3 += '<dt><strong>' + data3.posts[0].moreLink + '</strong></dt>';
-  htmlArticle3 += '</dl>';
-  htmlArticle3 += '</section>';
-  htmlArticle3 += '<article>';
-  htmlArticle3 +=
-    '<img src="/HikersGuide/design/File_001.png" alt="Alternate Text" />';
-  htmlArticle3 += '<article>';
-  htmlArticle3 += '<p><strong>' + data3.posts[1].title + '</strong></p>';
 
-  htmlArticle3 += '<h3>' + data3.posts[1].subtitle + '</h3>';
-  htmlArticle3 += '<p>' + data3.posts[1].text + '</p>';
-  htmlArticle3 += '</article>';
-  htmlArticle3 += '<dl>';
-  htmlArticle3 += '<dt>by ' + data3.posts[1].author + '</dt>';
-  htmlArticle3 += '<dt>' + data3.posts[1].postDate + '</dt>';
-  htmlArticle3 += '<dt>' + data3.posts[1].moreLink + '</dt>';
-  htmlArticle3 += '</dl>';
-  htmlArticle3 += '</article>';
+function secALevel3(dataPosts3) {
+  var htmlPosts3 = '<ul>';
 
-  var articleBlog = document.getElementById('aLevel3');
-  articleBlog.innerHTML = htmlArticle3;
+  var imageArray2 = [
+    require('@/assets/images/union-wood-sunrise.jpg'),
+    require('@/assets/images/File_001.png'),
+  ];
+
+  //var htmlPosts3 = '';
+  for (var i = 0; i < dataPosts3.locations.length - 3; i++) {
+    htmlPosts3 += '<article>';
+    htmlPosts3 += '<img src="' + imageArray2[i] + '"';
+    htmlPosts3 += 'alt="' + dataPosts3.locations[i].title + '"/>';
+    htmlPosts3 += '<div><h5>' + dataPosts3.locations[i].title + '</h5>';
+
+    htmlPosts3 +=
+      '<header><p><strong>' +
+      dataPosts3.locations[i].text +
+      '</strong></p></header>';
+
+    /* htmlPosts3 +="<header><p><strong>" +dataPosts3.locations[i].text +"</strong></p></header>"; */
+
+    htmlPosts3 += '<footer>';
+    htmlPosts3 += '<p>by ' + dataPosts3.locations[i].author + '</p>';
+    htmlPosts3 += '<p>' + dataPosts3.locations[i].postDate + '</p>';
+    htmlPosts3 += '<p>' + dataPosts3.locations[i].moreLink + '</p>';
+    htmlPosts3 += '</footer></div>';
+    htmlPosts3 += '</article>';
+  }
+
+  htmlPosts3 += '</ul>';
+
+  var articleBlog = document.getElementById('articlesPart3');
+  articleBlog.innerHTML = htmlPosts3;
 }
+
 function secALevel4(data4) {
   var htmlArticle4 = '';
   htmlArticle4 += '<article>';

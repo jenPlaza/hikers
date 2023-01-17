@@ -1,27 +1,32 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div>
-    <img alt=" alternate text" src="/assets/images/File_011..png" />
-    <section id="rotatorEvents">
-      <h1>May 4</h1>
-      <h5>Dessert gingerbread lollipop pudding cheesecake gummies.</h5>
+    <div id="rotatorEvents">
+      <img
+        alt=" alternate text"
+        v-bind:src="require('../../assets/images/File_011.png')"
+      />
+      <section>
+        <h1>May 4</h1>
+        <h5>Dessert gingerbread lollipop pudding cheesecake gummies.</h5>
 
-      <span>
-        <button class="left" onclick="location.href='#';">.</button>
-      </span>
-      <span>
-        <button class="right" onclick="location.href='#';">.</button>
-      </span>
-    </section>
+        <span>
+          <button class="left" onclick="location.href='#';">.</button>
+        </span>
+        <span>
+          <button class="right" onclick="location.href='#';">.</button>
+        </span>
+      </section>
+    </div>
   </div>
 </template>
-
-<script>
+<script src="../../../js/events.js"></script>
+<!-- <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: 'banner',
 };
-</script>
-<script>
+
 var myHome = new XMLHttpRequest();
 myHome.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 
@@ -32,7 +37,8 @@ myHome.onload = function () {
 
 function secRotate(dataEvents) {
   var htmlEvents = '';
-
+  htmlEvents +=
+    '<img alt=" alternate text" src="/assets/images/File_011.png" />';
   htmlEvents += '<section>';
 
   htmlEvents += '<h1>' + dataEvents.events[4].date + '</h1>';
@@ -49,7 +55,7 @@ function secRotate(dataEvents) {
   var articleEvents = document.getElementById('rotatorEvents');
   articleEvents.innerHTML = htmlEvents;
 }
-</script>
+</script> -->
 <style>
 #rotatorEvents {
   overflow: hidden;
@@ -71,7 +77,7 @@ span .left {
   position: relative;
   padding-left: 2%;
   float: left;
-  background: url(/HikersGuide/images/left.png) no-repeat;
+  /* background: url(/HikersGuide/images/left.png) no-repeat; */
   width: 50px;
   height: 50px;
   border: none;
@@ -81,7 +87,7 @@ span .right {
   position: relative;
   padding-right: 2%;
   float: right;
-  background: url(/HikersGuide/images/right.png) no-repeat;
+  /* background: url(/HikersGuide/images/right.png) no-repeat; */
   width: 50px;
   height: 50px;
   border: none;

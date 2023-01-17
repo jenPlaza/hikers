@@ -35,7 +35,6 @@
     </section>
   </main>
 </template>
-
 <script src="../../../js/index.js"></script>
 <style>
 #posts header h2 {

@@ -131,10 +131,13 @@ pSec4.send();
   width: 100vw;
   height: auto;
 }
+#articlesPart4 ul {
+  padding: 0;
+}
 
 #articlesPart4 article {
   width: 100vw;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   margin-left: 1px;
   color: #ffd503;
   text-align: left;
@@ -231,19 +234,22 @@ margin: -65% 0 0 0;*/
   }
 
   #articlesPart4 article {
-    margin-bottom: 0%;
+    margin-bottom: 5%;
     height: 29vh;
   }
 
   #articlesPart4 section {
     width: 100%;
-    height: 1100px;
+  }
+  #articlesPart4 section img {
+    width: 100vw;
+    height: 485px;
   }
   #articlesPart4 section div {
-    margin: -75% 3% 0% 3%;
+    margin: -22% 3% 0% 3%;
   }
   #articlesPart4 article div {
-    bottom: -41px;
+    bottom: -40px;
   }
   #articlesPart4 article img {
     width: 100vw;
@@ -256,94 +262,37 @@ margin: -65% 0 0 0;*/
     height: 100%;
   }
   #articlesPart4 article:last-of-type {
-    height: 870px;
+    height: 615px;
+    margin-top: 25%;
   }
   #articlesPart4 article:last-of-type img {
-    height: 36vh;
+    position: absolute;
+    top: 0px;
+  }
+  #articlesPart4 article:last-of-type div {
+    bottom: 0px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* #articlesPart4 {
-  width: 80vw;
-  height: auto;
-  margin-bottom: -78%;
-} */
   #articlesPart4 article {
     width: 100vw;
     float: left;
-    margin-top: 5%;
+    margin-top: -5%;
+  }
+  #articlesPart4 article:last-of-type {
+    height: 560px;
   }
   #articlesPart4 article:first-of-type img {
-    width: 142vw;
+    width: 100vw;
   }
   #articlesPart4 article:last-of-type img {
     width: 100vw;
-    /* #articlesPart4 article img {
-  width: 100vw;
-  object-fit: cover;
-}
-#articlesPart4 article:first-of-type {
-   margin-bottom:3%;
-}
-  #articlesPart4 article:first-of-type img {
-   height: 100%;
-}
-#articlesPart4 article:first-of-type div{
-bottom: 0;
-  left: 0;
-  position: absolute;
-  padding-bottom: 3%;
-}
- #articlesPart4 article:last-of-type {
-  margin-bottom:3%;
-}
-#articlesPart4 article:last-of-type div{
-bottom: 5px;
-  left: 0;
-  position: absolute;
-  padding-bottom: 3%;
-}
-#articlesPart4 section {
-  width: 100%;
-  height: 500px;
-  margin: 0;
-}
-#articlesPart4 section div {
-  margin: -32% 3% 0% 3%;
-}
-}
-@media screen and (min-width: 992px) {
-#articlesPart4  {
-  width: 100vw;
-  height:100%;
-  margin-top: 2%;
-}
-#articlesPart4 ul {
-padding: 1% 0;
-height:800px;
-}
-#articlesPart4 article {
-  float: left;
-}
-#articlesPart4 article:first-of-type {
-  height:300px;
-  width:100%;
-  margin-bottom: 4%;
-  }
-  #articlesPart4 article:last-of-type {
-  height: 435px;
-   width:100%;
-}
-#articlesPart4 article img {
-  width: 100%;
-  object-fit: cover;
-  }
-#articlesPart4 article:last-of-type img { */
+
     height: 40vh;
   }
   #articlesPart4 article:last-of-type div {
     position: absolute;
-    bottom: 117px;
+    bottom: 0px;
   }
   #articlesPart4 section img {
     height: 500px;
@@ -351,25 +300,9 @@ height:800px;
   }
   #articlesPart4 section {
     width: 100vw;
-    position: relative;
-    margin-bottom: 10%;
+    margin-bottom: 3%;
   }
 
-  /*   bottom: 0px;
-  left:0;
-  padding: 1px 5px;
-  height: 245px;
-}
-
-#articlesPart4 section {
-  width: 100%;
-  height: 360px;
-  margin: 0;
-}
-#articlesPart4 section img {
-  height: 350px;
-  object-fit:cover;
-} */
   #articlesPart4 section div {
     margin: -25% 3% 0% 3%;
   }
@@ -385,36 +318,34 @@ height:800px;
   #articlesPart4 article img {
     height: 43vh;
   }
+  #articlesPart4 article:first-of-type {
+    margin-top: 0px;
+  }
   #articlesPart4 article:first-of-type div {
     bottom: 19px;
   }
   #articlesPart4 article:last-of-type div {
     bottom: 15px;
   }
+  #articlesPart4 article:last-of-type img {
+    object-fit: cover;
+  }
   #articlesPart4 section div {
     margin: -30% 3% 0% 3%;
-    /*  bottom: 0;
-}
-#articlesPart4 article:last-of-type div {
-  bottom: 5px;
-  height:275px;
-}
-#articlesPart4 section div {
-   margin: -18% 3% 0% 3%;
-  text-align: left; 
-}
-#articlesPart4 article div {*/
     bottom: 20px;
   }
 }
 @media screen and (min-width: 1500px) {
-  /*   #articlesPart4 {
+  #articlesPart4 {
     margin-bottom: -5%;
-}
+  }
   #articlesPart4 ul {
-display:flex;
-height:425px;
-  }*/
+    display: flex;
+    height: 425px;
+  }
+  #articlesPart4 article:first-of-type img {
+    height: auto;
+  }
 
   #articlesPart4 article h3,
   #articlesPart4 article p strong,

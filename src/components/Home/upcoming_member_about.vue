@@ -1,51 +1,53 @@
 <template>
   <!--Upcoming Events block-->
-  <section id="UpcomingEvents">
-    <section id="mEvents">
-      <h3>Upcoming Events</h3>
-      <ul>
-        <li>
-          <h5>Date</h5>
-          <p><strong>Event Title</strong></p>
-          <p>Event Description</p>
-        </li>
-      </ul>
-    </section>
+  <div>
+    <section id="UpcomingEvents">
+      <section id="mEvents">
+        <h3>Upcoming Events</h3>
+        <ul>
+          <li>
+            <h5>Date</h5>
+            <p><strong>Event Title</strong></p>
+            <p>Event Description</p>
+          </li>
+        </ul>
+      </section>
 
-    <!--Members block-->
-    <section id="members">
-      <h3>New Hikers</h3>
-      <ul>
-        <li>
-          <!-- // <img src="images/user.png" alt="Alternate Text" /> -->
+      <!--Members block-->
+      <section id="members">
+        <h3>New Hikers</h3>
+        <ul>
+          <li>
+            <!-- // <img src="images/user.png" alt="Alternate Text" /> -->
 
-          <img src="../../assets/images/user.png" alt="Alternate Text" />
+            <img src="../../assets/images/user.png" alt="Alternate Text" />
 
+            <p>
+              <strong>jen Plaza</strong>
+              <br />
+              City, ST
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!--About block-->
+      <section id="about">
+        <h3>About</h3>
+        <div>
+          <h5>Title</h5>
           <p>
-            <strong>jen Plaza</strong>
-            <br />
-            City, ST
+            Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor
+            commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed
+            velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis
+            in eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus
+            vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu
+            sem integer.
           </p>
-        </li>
-      </ul>
+        </div>
+      </section>
     </section>
-
-    <!--About block-->
-    <section id="about">
-      <h3>About</h3>
-      <div>
-        <h5>Title</h5>
-        <p>
-          Enim sed faucibus turpis in eu mi bibendum neque egestas. Tempor
-          commodo ullamcorper a lacus vestibulum sed arcu non odio. Nunc sed
-          velit dignissim sodales ut eu sem integer. Enim sed faucibus turpis in
-          eu mi bibendum neque egestas. Tempor commodo ullamcorper a lacus
-          vestibulum sed arcu non odio. Nunc sed velit dignissim sodales ut eu
-          sem integer.
-        </p>
-      </div>
-    </section>
-  </section>
+  </div>
 </template>
 
 <script>

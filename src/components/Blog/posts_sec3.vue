@@ -26,50 +26,6 @@
 export default {
   name: 'posts_sec3',
 };
-
-// var pSec3 = new XMLHttpRequest();
-// pSec3.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
-
-// pSec3.onload = function () {
-//   var jsonPosts = JSON.parse(pSec3.responseText);
-//   articlesPart3(jsonPosts);
-// };
-// function articlesPart3(dataPosts3) {
-//   var htmlPosts3 = '<ul>';
-
-//   var imageArray2 = [
-//     require('@/assets/images/union-wood-sunrise.jpg'),
-//     require('@/assets/images/File_001.png'),
-//   ];
-
-//   //var htmlPosts3 = '';
-//   for (var i = 0; i < dataPosts3.locations.length - 3; i++) {
-//     htmlPosts3 += '<article>';
-//     htmlPosts3 += '<img src="' + imageArray2[i] + '"';
-//     htmlPosts3 += 'alt="' + dataPosts3.locations[i].title + '"/>';
-//     htmlPosts3 += '<div><h5>' + dataPosts3.locations[i].title + '</h5>';
-
-//     htmlPosts3 +=
-//       '<header><p><strong>' +
-//       dataPosts3.locations[i].text +
-//       '</strong></p></header>';
-
-//     /* htmlPosts3 +="<header><p><strong>" +dataPosts3.locations[i].text +"</strong></p></header>"; */
-
-//     htmlPosts3 += '<footer>';
-//     htmlPosts3 += '<p>by ' + dataPosts3.locations[i].author + '</p>';
-//     htmlPosts3 += '<p>' + dataPosts3.locations[i].postDate + '</p>';
-//     htmlPosts3 += '<p>' + dataPosts3.locations[i].moreLink + '</p>';
-//     htmlPosts3 += '</footer></div>';
-//     htmlPosts3 += '</article>';
-//   }
-
-//   htmlPosts3 += '</ul>';
-
-//   var articleBlog = document.getElementById('articlesPart3');
-//   articleBlog.innerHTML = htmlPosts3;
-// }
-// pSec3.send();
 </script>
 <style>
 #articlesPart3 {
@@ -78,14 +34,15 @@ export default {
   margin-bottom: 1%;
 }
 
-/* #articlesPart3 ul{
-padding:0;
-} */
+#articlesPart3 ul {
+  padding: 0;
+}
 
 #articlesPart3 article {
   width: 100vw;
   height: 435px;
-  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   margin-left: 1px;
   color: #ffd503;
   text-align: left;
@@ -100,7 +57,7 @@ padding:0;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   padding: 1% 1% 1% 3%;
-  bottom: 40px;
+  bottom: 15px;
   right: 0px;
   position: absolute;
 }
@@ -128,7 +85,7 @@ padding:0;
 
 #articlesPart3 article:first-of-type div {
   background: url('../../assets/images/white.jpg');
-  height: 141px;
+  height: 265px;
 }
 #articlesPart3 article:last-of-type div {
   background: url('../../assets/images/JG-Warm-Painterly-Background@2x.jpg');
@@ -146,7 +103,8 @@ padding:0;
 / *====================================== */
 @media screen and (min-width: 768px) {
   #articlesPart3 article {
-    margin-bottom: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
   #articlesPart3 {
     margin-bottom: -10%;
@@ -172,18 +130,10 @@ padding:0;
     bottom: 50px;
   }
 }
+
 @media screen and (min-width: 992px) {
   #articlesPart3 {
-    margin-bottom: 0%;
-    margin-top: 8%;
-    /* #articlesPart3 footer {
-  bottom: 50px;
-} */
-    /* }
-@media screen and (min-width: 992px) {
-#articlesPart3 {
-  height: 839px;
-  margin-bottom: 6%; */
+    height: 600px;
   }
   #articlesPart3 article {
     width: 100vw;
@@ -225,28 +175,6 @@ padding:0;
   #articlesPart3 article {
     padding: 7px;
   }
-  /*   display: flex;
-  justify-content: center;
-  margin-top: 2%;
-  height: 54vh;
-}
-#articlesPart3 ul {
-  display: flex;
-  justify-content: center;
-}
-#articlesPart3 article {
-  padding: 7px;
-  height: 510px;
-}
-#articlesPart3 article:first-of-type div {
-  height: 100px;
-  bottom: 10px;
-  right: 9px;
-  width: 29vw;
-}
-#articlesPart3 article:first-of-type img, #articlesPart3 article:last-of-type img  {
-  height: 600px;
-}*/
 
   #articlesPart3 article:first-of-type div header {
     width: 30vw;
@@ -267,9 +195,9 @@ padding:0;
     height: 527px;
     margin-bottom: 122px;
   }
-  #articlesPart3 article {
+  /* #articlesPart3 article {
     width: 49vw;
-  }
+  } */
   #articlesPart3 article div {
     height: 105px;
     width: 100%;
