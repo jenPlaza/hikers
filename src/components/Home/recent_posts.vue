@@ -37,12 +37,17 @@
 </template>
 <script src="../../../js/index.js"></script>
 <style>
+main {
+  height: auto;
+  width: 100%;
+  padding: 0em 0 1em 0;
+}
 #posts header h2 {
-  margin-left: 3%;
+  margin-left: 0%;
 }
 #posts > ul {
   padding: 0;
-  width: 100vw;
+  width: 100%;
 }
 #posts article {
   background-size: cover;
@@ -52,6 +57,10 @@
   height: 300px;
   background-color: rgb(0, 0, 0, 0.15);
 }
+#posts article > img {
+  width: 100%;
+  height: 100%;
+}
 #posts > ul > li > article > section {
   text-align: center;
   margin-top: 6vh;
@@ -60,11 +69,6 @@
   justify-content: space-between;
   flex-direction: column;
 }
-#posts article > img {
-  width: 100%;
-  height: 100%;
-}
-
 /*Home: view more buttons*/
 .seeMore {
   background-color: rgba(169, 169, 169, 0.5);
@@ -77,14 +81,12 @@
   height: 40px;
   margin-bottom: 1vh;
 }
-
 #posts footer > span {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
 /* BREAKPOINTS*
   / *====================================== */
 @media (min-width: 768px) {
@@ -120,6 +122,15 @@
   }
   #posts article {
     height: 400px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  #posts header h2 {
+    margin-left: 0%;
+    margin-bottom: 17px;
+  }
+  #posts > ul {
+    margin-top: 47px;
   }
 }
 </style>

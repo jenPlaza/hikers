@@ -11,10 +11,20 @@
         <h5>Dessert gingerbread lollipop pudding cheesecake gummies.</h5>
 
         <span>
-          <button class="left" onclick="location.href='#';">.</button>
+          <button class="left" onclick="location.href='#';">
+            <img
+              alt=" alternate text"
+              v-bind:src="require('../../assets/images/left.png')"
+            />
+          </button>
         </span>
         <span>
-          <button class="right" onclick="location.href='#';">.</button>
+          <button class="right" onclick="location.href='#';">
+            <img
+              alt=" alternate text"
+              v-bind:src="require('../../assets/images/right.png')"
+            />
+          </button>
         </span>
       </section>
     </div>
@@ -58,8 +68,10 @@ function secRotate(dataEvents) {
 </script> -->
 <style>
 #rotatorEvents {
-  overflow: hidden;
+  overflow: scroll;
   height: 400px;
+  object-fit: contain;
+  width: 100vw;
 }
 #rotatorEvents h1 {
   text-align: center;
@@ -73,9 +85,12 @@ function secRotate(dataEvents) {
   color: #111111;
   /*font-size: 20px;*/
 }
+#rotatorEvents button {
+  background-color: transparent;
+}
 span .left {
-  position: relative;
-  padding-left: 2%;
+  position: absolute;
+  left: 0;
   float: left;
   /* background: url(/HikersGuide/images/left.png) no-repeat; */
   width: 50px;
@@ -84,13 +99,18 @@ span .left {
   margin-top: -100px;
 }
 span .right {
-  position: relative;
-  padding-right: 2%;
+  position: absolute;
+  right: 0;
   float: right;
   /* background: url(/HikersGuide/images/right.png) no-repeat; */
   width: 50px;
   height: 50px;
   border: none;
   margin-top: -100px;
+}
+@media screen and (min-width: 1200px) {
+  #rotatorEvents {
+    height: 350px;
+  }
 }
 </style>

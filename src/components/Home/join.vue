@@ -47,8 +47,14 @@
   / *====================================== */
 @media screen and (min-width: 768px) {
   #join {
-    margin: 8% 0 0 0;
+    height: 210px;
+    margin: 0;
     width: 100vw;
+  }
+
+  #join p {
+    position: absolute;
+    z-index: 1;
   }
   .climb {
     margin: -25% 0% 0% 5%;
@@ -64,7 +70,7 @@
 }
 @media screen and (min-width: 992px) {
   #join {
-    margin: 5% 0% -20% 0%;
+    margin: 2% 0% -20% 0%;
   }
   #join h2 {
     padding: 0%;
@@ -88,6 +94,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  #join {
+    height: 155px;
+  }
   .climb {
     width: 90%;
     margin-top: -2%;
@@ -96,6 +105,9 @@
     margin: 0% 0%;
     position: relative;
     z-index: 1;
+  }
+  #join h2 {
+    margin-top: -2%;
   }
 }
 @media screen and (min-width: 1500px) {

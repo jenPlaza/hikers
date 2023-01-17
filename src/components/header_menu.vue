@@ -182,8 +182,7 @@ nav > div > button:hover + .dropdown-content {
   .homePage {
     height: 650px;
     /* //background: url(/img/hiking3.02b4fe91.png) no-repeat 0px 0px; */
-    background: url(../assets/images/hiking3.png) no-repeat 0px 0px;
-    background-size: 100% 100%;
+    background: url(../assets/images/hiking3.png) no-repeat -147px 7px;
   }
   nav > div .nav {
     width: 19vw;

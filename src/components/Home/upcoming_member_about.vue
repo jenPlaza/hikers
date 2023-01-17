@@ -82,6 +82,7 @@ function secMiscMEvents(dataHomeMEvents) {
   articleBlog.innerHTML = htmlHome4;
 }
 function secMiscMem(dataHomeMembers) {
+  console.log(dataHomeMembers);
   var htmlHome3 = '<h3>New Hikers</h3>';
   htmlHome3 += '<ul>';
   for (var i = 0; i < dataHomeMembers.hikers.length; i++) {
@@ -110,8 +111,8 @@ function secMiscMem(dataHomeMembers) {
 }
 function secMiscAbout(dataHomeAbout) {
   var htmlHome5 = '<h3>About</h3>';
-  htmlHome5 += '<p><strong>' + dataHomeAbout.about.title + '</strong></p>';
-  htmlHome5 += '<p>' + dataHomeAbout.about.text + '</p>';
+  htmlHome5 += '<h4>' + dataHomeAbout.about.title + '</h4>';
+  htmlHome5 += '<h4>' + dataHomeAbout.about.text + '</h4>';
   htmlHome5 += '</section>';
   var articleBlog = document.getElementById('about');
   articleBlog.innerHTML = htmlHome5;
@@ -222,7 +223,7 @@ myHome.send();
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4% 0%;
+    padding: 0;
   }
 
   #mEvents {
@@ -301,18 +302,25 @@ myHome.send();
   }
   #mEvents li {
     margin-left: 2%;
-    width: 21vw;
+    width: 18vw;
   }
   #members ul {
     height: 325px;
   }
+  #UpcomingEvents #members img {
+    width: 345px;
+  }
   #about {
     margin: 8% 0% 7% 6%;
+  }
+  #UpcomingEvents {
+    margin: 0;
   }
 }
 @media screen and (min-width: 2000px) {
   #members ul {
     height: 450px;
+    width: 92%;
   }
   #members {
     height: 300px;
