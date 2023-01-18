@@ -44,7 +44,7 @@ main {
 }
 #posts header h2 {
   margin-left: 0%;
-  padding-top: 0%;
+  padding: 0% 0px 5px 3%;
 }
 #posts > ul {
   padding: 0;
@@ -105,6 +105,10 @@ main {
   }
   #posts header h2 {
     margin-left: 2%;
+    padding: 1.5% 0px 5px 3%;
+  }
+  main {
+    padding: 0em 0 0 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -124,6 +128,12 @@ main {
   #posts article {
     height: 400px;
   }
+  #posts header h2 {
+    padding-top: 35px;
+  }
+  .body {
+    margin-top: 2%;
+  }
 }
 @media screen and (min-width: 2000px) {
   #posts header h2 {
@@ -132,6 +142,9 @@ main {
   }
   #posts > ul {
     margin-top: 47px;
+  }
+  #posts header h2 {
+    padding-top: 50px;
   }
 }
 </style>

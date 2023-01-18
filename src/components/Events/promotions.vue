@@ -257,7 +257,8 @@ h3 {
     margin: 18% 0 3% 0;
   }
   #promos {
-    margin-top: -12%;
+    margin-top: -16%;
+    margin-bottom: 5%;
   }
   #promos section:last-of-type {
     display: flex;
@@ -311,7 +312,7 @@ h3 {
   }
   #misc .btns {
     height: 1vh;
-    margin-top: 5em;
+    margin-top: 6.6em;
   }
   #misc .btnL {
     padding: 10px 45px;
@@ -323,12 +324,13 @@ h3 {
   #misc .btnBuy,
   #misc .btnL {
     align-self: flex-start;
-    margin-top: 2em;
+    margin-top: 4em;
   }
 }
 @media screen and (min-width: 1500px) {
   #promos {
-    margin-top: 0%;
+    margin-top: -3%;
+    margin-bottom: 0;
   }
   #misc {
     margin: 8% 0% -8% 0%;
@@ -346,13 +348,21 @@ h3 {
 }
 @media screen and (min-width: 2000px) {
   #promos {
-    margin-top: 3%;
+    margin-top: 0;
   }
   #misc {
     margin: 5% 0% -8% 0%;
   }
   #misc article body {
     height: 2vh;
+  }
+  #misc .btnBuy,
+  #misc .btnL {
+    margin-top: 6em;
+  }
+  #misc .btns {
+    height: 1vh;
+    margin-top: 8.3em;
   }
 }
 </style>

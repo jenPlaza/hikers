@@ -40,7 +40,7 @@ export default {
 #sign p {
   margin-top: -3.5%;
   background-color: #292828;
-  padding: 8% 10px;
+  padding: 5% 10px 1% 10px;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -72,7 +72,7 @@ option {
 @media screen and (min-width: 992px) {
   #sign p {
     margin-top: 2%;
-    padding: 6% 0 3% 0;
+    padding: 4% 0 1% 0;
   }
 }
 
@@ -84,7 +84,7 @@ option {
 @media screen and (min-width: 2000px) {
   #sign p {
     margin-top: -6%;
-    padding: 4% 0;
+    padding: 50px 0 0 0;
   }
 }
 </style>

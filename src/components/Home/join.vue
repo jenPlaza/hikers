@@ -96,6 +96,7 @@
 @media screen and (min-width: 1200px) {
   #join {
     height: 155px;
+    margin: 1% 0% -20% 0%;
   }
   .climb {
     width: 90%;
@@ -112,7 +113,7 @@
 }
 @media screen and (min-width: 1500px) {
   #join {
-    margin: 7% 0% 7% 0%;
+    margin: 1% 0% 7% 0%;
   }
   #join h2 {
     padding: 0%;
@@ -130,7 +131,7 @@
 }
 @media screen and (min-width: 2000px) {
   #join {
-    margin: 5% 0% 5% 0%;
+    margin: 1% 0% 5% 0%;
   }
   .climb {
     width: 55%;

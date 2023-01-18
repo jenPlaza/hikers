@@ -205,7 +205,7 @@ myHome.send();
     object-fit: cover;
   }
   #members {
-    padding: 4% 0% 2% 0%;
+    padding: 5px 0% 0% 0%;
   }
   #members li {
     height: 355px;
@@ -273,7 +273,7 @@ myHome.send();
     width: 100%;
     height: 300px;
     margin: -2% 0% 0% 0%;
-    padding: 1% 0% 5% 0%;
+    padding: 0% 0% 2% 0%;
   }
   #members li {
     height: 265px;
@@ -282,7 +282,7 @@ myHome.send();
     width: 24vw;
   }
   #about {
-    margin: 8% 0% 7% 6.5%;
+    margin: 5% 0% 5% 6.5%;
   }
   #UpcomingEvents #members img {
     width: 275px;
