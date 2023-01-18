@@ -1,3 +1,6 @@
+// module.exports = {
+//   publicPath: '/hikers/',
+// };
 module.exports = {
-  publicPath: '/hikers/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/hikers/' : '/',
 };
