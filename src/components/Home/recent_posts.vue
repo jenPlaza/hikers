@@ -44,6 +44,7 @@ main {
 }
 #posts header h2 {
   margin-left: 0%;
+  padding-top: 0%;
 }
 #posts > ul {
   padding: 0;
