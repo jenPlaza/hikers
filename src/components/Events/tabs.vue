@@ -4,11 +4,11 @@
       <h2 id="id03">Events</h2>
     </header>
     <section id="tab">
-      <button class="tablinks active" @click="openTab(event, 'Today')">
+      <button id="todayBtn" class="tablinks active" @click="openTab(event, 'Today')">
         Today
       </button>
-       <button class="tablinks" @click="openTab(event, 'Weekend')">Weekend</button>
-         <button class="tablinks" @click="openTab(event, 'ThisMonth')">This Month</button>
+       <button id="weekendBtn" class="tablinks" @click="openTab(event, 'Weekend')">Weekend</button>
+         <button id="thisMonthBtn" class="tablinks" @click="openTab(event, 'ThisMonth')">This Month</button>
     </section>
 
     <section id="events">
@@ -68,6 +68,7 @@ myEvents.onload = function() {
   secThisMonth(jsonEvents);
 };
 function secToday(dataEvents2) {
+    var htmlEvents2 = "<ul>";
    var imageArray = [
     require("@/assets/images/sunnytrees.png"),
     require("@/assets/images/File_017.png"),
@@ -76,7 +77,7 @@ function secToday(dataEvents2) {
     require("@/assets/images/photo-1507041957456-9c397ce39c97.jpg"),
     require("@/assets/images/File_013.png"),
   ];
-  var htmlEvents2 = "<ul>";
+
   for (var i = 0; i < dataEvents2.events.length; i++) {
     htmlEvents2 += "<li><article>";
     htmlEvents2 += '<img src="' + imageArray[i] + '"';
@@ -164,23 +165,40 @@ myEvents.send();
 export default {
     // eslint-disable-next-line vue/multi-word-component-names
   name: "tabs",
+  props: {
+    tabId: String,
+    tabName: String,
+    e: String,
+  },
+  setup(e) {
+    console.log(e.target)
+  },
   methods: {
-     openTab: function (e, tabName) {
+     openTab(tabId, tabName, e) {
       var x = document.querySelectorAll(".tabContent");
         console.log(x.length)
        for (var i = 0; i < x.length; i++) {
          x[i].style.display = "none";
        }
        document.getElementById(tabName).style.display = "block";
-      
+      console.log("test1")
       // toggle buttons
-      var y = document.querySelectorAll(".tablinks");
-        for (var p = 0; p < y.length; p++) {
+       x = document.querySelectorAll(".tablinks");
+      console.log("im here 1")
+      for ( i = 0; i < x.length; i++) {
+          console.log("test2")
             // remove active class
-       y[p].className = y[p].className.replace(" active", "");
-        }
+       x[i].className = x[i].className.replace(" active", "");
+      }
+        
+      console.log("im here 2");
+      console.log("e.targrt: ", e.target);
+      console.log("tabId.currentTarget: ", tabId.currentTarget);
+         
       // get recent target and assign active
-        e.currentTarget.className += " active";
+      tabId.currentTarget.className += " active";
+      console.log("test3")
+
       }
   },
 };
