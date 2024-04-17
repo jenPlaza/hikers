@@ -1,40 +1,32 @@
 <template>
-<div>
-<img alt=" alternate text" src="/assets/images/File_011..png">
-  <section id="rotatorEvents">
-     
-        <h1>
-            May 4
-        </h1>
-        <h5>
-            Dessert gingerbread lollipop pudding cheesecake gummies.
-        </h5>
+  <div>
+    <img alt=" alternate text" src="../../assets/images/File_011.png" />
+    <section id="rotatorEvents">
+      <h1>May 4</h1>
+      <h5>Dessert gingerbread lollipop pudding cheesecake gummies.</h5>
 
-        <span>
-            <button class="left" onclick="location.href='#';">.</button>
-        </span>
-        <span>
-            <button class="right" onclick="location.href='#';">.</button>
-        </span>
-
+      <span>
+        <button class="left" onclick="location.href='#';">.</button>
+      </span>
+      <span>
+        <button class="right" onclick="location.href='#';">.</button>
+      </span>
     </section>
-    </div>
+  </div>
 </template>
 
- <script>
-export default {
-      // eslint-disable-next-line vue/multi-word-component-names
-  name: 'banner',
-}
-</script> 
 <script>
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'banner',
+};
+
 var myHome = new XMLHttpRequest();
 myHome.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 
 myHome.onload = function () {
-
-    var jsonHome = JSON.parse(myHome.responseText);
-    secRotate(jsonHome);
+  var jsonHome = JSON.parse(myHome.responseText);
+  secRotate(jsonHome);
 };
 
 function secRotate(dataEvents) {
@@ -59,39 +51,39 @@ function secRotate(dataEvents) {
 </script>
 <style>
 #rotatorEvents {
-    overflow: hidden;
-    height:400px;
+  overflow: hidden;
+  height: 400px;
 }
 #rotatorEvents h1 {
-    text-align: center;
-    margin-top: -250px;
-    color: #111111;
-    font-size:4em;
+  text-align: center;
+  margin-top: -250px;
+  color: #111111;
+  font-size: 4em;
 }
 #rotatorEvents h5 {
-        text-align: center;
-        margin-top: -20px;
-        color: #111111;
-        /*font-size: 20px;*/
-    }
+  text-align: center;
+  margin-top: -20px;
+  color: #111111;
+  /*font-size: 20px;*/
+}
 span .left {
-    position: relative;
-    padding-left: 2%;
-    float: left;
-    background: url(/HikersGuide/images/left.png) no-repeat;
-    width: 50px;
-    height: 50px;
-    border: none;
-    margin-top: -100px
+  position: relative;
+  padding-left: 2%;
+  float: left;
+  background: url(../../assets/images/left.png) no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin-top: -100px;
 }
 span .right {
-    position: relative;
-    padding-right: 2%;
-    float: right;
-    background: url(/HikersGuide/images/right.png) no-repeat;
-    width: 50px;
-    height: 50px;
-    border: none;
-    margin-top: -100px;
+  position: relative;
+  padding-right: 2%;
+  float: right;
+  background: url(../../assets/images/right.png) no-repeat;
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin-top: -100px;
 }
 </style>
