@@ -7,9 +7,7 @@
         <li>
           <h5>Date</h5>
           <p><strong>Event Title</strong></p>
-          <p>
-            Event Description
-          </p>
+          <p>Event Description</p>
         </li>
       </ul>
     </section>
@@ -49,66 +47,66 @@
 
 <script>
 export default {
-    // eslint-disable-next-line vue/multi-word-component-names
-  name: "section",
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: 'section',
 };
 
 var myHome = new XMLHttpRequest();
-myHome.open("GET", "https://joshbloom.github.io/dws1/data/hikersguide.json");
+myHome.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 
-myHome.onload = function() {
+myHome.onload = function () {
   var jsonHome = JSON.parse(myHome.responseText);
   secMiscMEvents(jsonHome);
   secMiscMem(jsonHome);
   secMiscAbout(jsonHome);
 };
 function secMiscMEvents(dataHomeMEvents) {
-  var htmlHome4 = "";
-  htmlHome4 += "<h3>Upcoming Events</h3>";
-  htmlHome4 += "<ul>";
+  var htmlHome4 = '';
+  htmlHome4 += '<h3>Upcoming Events</h3>';
+  htmlHome4 += '<ul>';
   for (var i = 0; i < dataHomeMEvents.events.length; i++) {
     htmlHome4 +=
-      "<li><header><h5>" + dataHomeMEvents.events[i].date + "</h5></header>";
-    htmlHome4 += "<p><strong>" + dataHomeMEvents.events[i].title + "</strong>";
-    htmlHome4 += "<br/ >" + dataHomeMEvents.events[i].state + "</p></li>";
+      '<li><header><h5>' + dataHomeMEvents.events[i].date + '</h5></header>';
+    htmlHome4 += '<p><strong>' + dataHomeMEvents.events[i].title + '</strong>';
+    htmlHome4 += '<br/ >' + dataHomeMEvents.events[i].state + '</p></li>';
   }
-  htmlHome4 += "</ul>";
-  var articleBlog = document.getElementById("mEvents");
+  htmlHome4 += '</ul>';
+  var articleBlog = document.getElementById('mEvents');
   articleBlog.innerHTML = htmlHome4;
 }
 function secMiscMem(dataHomeMembers) {
-  var htmlHome3 = "<h3>New Hikers</h3>";
-  htmlHome3 += "<ul>";
+  var htmlHome3 = '<h3>New Hikers</h3>';
+  htmlHome3 += '<ul>';
   for (var i = 0; i < dataHomeMembers.hikers.length; i++) {
     htmlHome3 +=
       '<li><span><img src="' + dataHomeMembers.hikers[i].imageURL + '"';
     htmlHome3 += 'alt="' + dataHomeMembers.hikers[i].subtitle + '"/></span>';
     htmlHome3 +=
-      "<p><strong>" +
+      '<p><strong>' +
       dataHomeMembers.hikers[i].firstname +
-      " " +
+      ' ' +
       dataHomeMembers.hikers[i].lastname +
-      "</strong>";
+      '</strong>';
     htmlHome3 +=
-      "<br/ >  A member since " +
+      '<br/ >  A member since ' +
       dataHomeMembers.hikers[0].joinDate +
-      ". A member from" +
+      '. A member from' +
       dataHomeMembers.hikers[i].city +
-      ", " +
+      ', ' +
       dataHomeMembers.hikers[i].state +
-      ".";
-    htmlHome3 += "</p></li>";
+      '.';
+    htmlHome3 += '</p></li>';
   }
-  htmlHome3 += "</ul>";
-  var articleBlog = document.getElementById("members");
+  htmlHome3 += '</ul>';
+  var articleBlog = document.getElementById('members');
   articleBlog.innerHTML = htmlHome3;
 }
 function secMiscAbout(dataHomeAbout) {
-  var htmlHome5 = "<h3>About</h3>";
-  htmlHome5 += "<p><strong>" + dataHomeAbout.about.title + "</strong></p>";
-  htmlHome5 += "<p>" + dataHomeAbout.about.text + "</p>";
-  htmlHome5 += "</section>";
-  var articleBlog = document.getElementById("about");
+  var htmlHome5 = '<h3>About</h3>';
+  htmlHome5 += '<p><strong>' + dataHomeAbout.about.title + '</strong></p>';
+  htmlHome5 += '<p>' + dataHomeAbout.about.text + '</p>';
+  htmlHome5 += '</section>';
+  var articleBlog = document.getElementById('about');
   articleBlog.innerHTML = htmlHome5;
 }
 myHome.send();
@@ -131,7 +129,7 @@ myHome.send();
 
 #about {
   width: 90%;
-  margin: 10% 5% 20% 5%
+  margin: 10% 5% 20% 5%;
 }
 #mEvents h3,
 #members h3 {
@@ -140,9 +138,9 @@ myHome.send();
 #mEvents h5 {
   margin-bottom: 2%;
 }
-  #members ul {
-padding:0;
-  }
+#members ul {
+  padding: 0;
+}
 #mEvents li {
   margin-left: 5%;
 }
@@ -213,51 +211,51 @@ padding:0;
   }
 }
 @media screen and (min-width: 992px) {
- #members{
-     display: flex;
-    flex-direction:column;
-    align-items:center;
+  #members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 4% 0%;
   }
 
   #mEvents {
-    padding-bottom:5%;
+    padding-bottom: 5%;
   }
-  #mEvents ul{
-    width: 100vw; 
-   }
-  #members ul{
+  #mEvents ul {
+    width: 100vw;
+  }
+  #members ul {
     height: auto;
     column-count: 4;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     width: 95vw;
   }
   #mEvents li {
- display: inline-block;
-     margin-left: 0; 
-    width: 18vw; 
-    }
-     #members li {
+    display: inline-block;
+    margin-left: 0;
+    width: 18vw;
+  }
+  #members li {
     height: 221px;
   }
   #UpcomingEvents #members img {
-  width: 225px;
+    width: 225px;
     height: 165px;
   }
   #mEvents h3 {
-margin-left: 5%;
+    margin-left: 5%;
   }
-#members h3 {
-  margin-left: 11%;
-  width: 100vw;
-}
-#about {
+  #members h3 {
+    margin-left: 11%;
+    width: 100vw;
+  }
+  #about {
     width: 90%;
     margin: 8% 6%;
   }
 }
 @media screen and (min-width: 1200px) {
-  #members ul  {
+  #members ul {
     height: 270px;
     column-count: 4;
   }
@@ -270,9 +268,9 @@ margin-left: 5%;
   #members li {
     height: 265px;
   }
-  #mEvents li{
- width: 24vw; 
-      }
+  #mEvents li {
+    width: 24vw;
+  }
   #about {
     margin: 8% 0% 7% 6.5%;
   }
@@ -280,27 +278,28 @@ margin-left: 5%;
     width: 275px;
     height: 150px;
   }
-  #members h3, #mEvents h3 {
-  margin-left: 12%;
-}
+  #members h3,
+  #mEvents h3 {
+    margin-left: 12%;
+  }
 }
 @media screen and (min-width: 1500px) {
   #members {
     margin-top: -6%;
   }
-   #mEvents {
+  #mEvents {
     margin-bottom: 3%;
   }
-     #mEvents li{
- margin-left: 2%;
- width: 21vw;
-}
+  #mEvents li {
+    margin-left: 2%;
+    width: 21vw;
+  }
   #members ul {
     height: 325px;
   }
-#about {
+  #about {
     margin: 8% 0% 7% 6%;
-}
+  }
 }
 @media screen and (min-width: 2000px) {
   #members ul {
@@ -309,14 +308,14 @@ margin-left: 5%;
   #members {
     height: 300px;
   }
- #mEvents h3 {
-  margin-left: 5%;
-}
-#members h3{
-  margin-left: 10%;
-}
-#about {
-    margin: 5% 0% 7% 6%;
-}
+  #mEvents h3 {
+    margin-left: 5%;
+  }
+  #members h3 {
+    margin-left: 10%;
+  }
+  #about {
+    margin: 5% 6%;
+  }
 }
 </style>

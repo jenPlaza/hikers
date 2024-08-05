@@ -12,22 +12,27 @@
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "section",
+  name: 'section',
 };
 
 var myHome = new XMLHttpRequest();
-myHome.open("GET", "https://joshbloom.github.io/dws1/data/hikersguide.json");
+myHome.open('GET', 'https://joshbloom.github.io/dws1/data/hikersguide.json');
 
-myHome.onload = function() {
+myHome.onload = function () {
   var jsonHome = JSON.parse(myHome.responseText);
   secJoin(jsonHome);
 };
 function secJoin(dataHomeJoin) {
-  var htmlHome2 = "<h2>JOIN THE ADVENTURE</h2>";
-  htmlHome2 += "<h3>" + dataHomeJoin.locations[4].title + "</h3>";
-  htmlHome2 += "<p>" + dataHomeJoin.locations[4].text + " </p>";
-  htmlHome2 +="<p>" + dataHomeJoin.locations[4].city +" | " + dataHomeJoin.locations[4].state +" </p>";
-  var articleEvents = document.getElementById("join");
+  var htmlHome2 = '<h2>JOIN THE ADVENTURE</h2>';
+  htmlHome2 += '<h3>' + dataHomeJoin.locations[4].title + '</h3>';
+  htmlHome2 += '<p>' + dataHomeJoin.locations[4].text + ' </p>';
+  htmlHome2 +=
+    '<p>' +
+    dataHomeJoin.locations[4].city +
+    ' | ' +
+    dataHomeJoin.locations[4].state +
+    ' </p>';
+  var articleEvents = document.getElementById('join');
   articleEvents.innerHTML = htmlHome2;
 }
 myHome.send();
@@ -37,16 +42,17 @@ myHome.send();
 #join {
   height: 350px;
   margin: 0% 0% -20% 0%;
-  padding-right: 6%;
+  padding: 0 6% 0 2%;
   background-color: #f0ae35;
   overflow: hidden;
-  width:100vw;
+  width: 100vw;
 }
 #join div {
   padding: 0 5%;
 }
 #join h2 {
-  padding: 4% 0% 0% 0%;
+  font-size: 2em;
+  padding: 3% 0% 0% 0%;
 }
 #join h3 {
   color: white;
@@ -81,7 +87,11 @@ myHome.send();
     position: relative;
   }
   #join h2 {
+    padding: 6% 0 0 0;
+  }
+  #join p {
     padding: 0;
+    width: 40%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -94,6 +104,7 @@ myHome.send();
   #join h3,
   #join p {
     padding: 0 0 0 2%;
+    width: 50%;
   }
 
   .climb {
@@ -129,7 +140,7 @@ myHome.send();
   }
   #join h2 {
     padding: 4% 0% 0% 2%;
-}
+  }
   .climb {
     width: 75%;
     float: right;
