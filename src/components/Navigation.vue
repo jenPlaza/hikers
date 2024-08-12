@@ -1,8 +1,8 @@
 <template>
   <div>
-    <router-link to="/" target="”_blank”">Home</router-link>
-    <router-link to="/events" target="”_blank”">Events</router-link>
-    <router-link to="/blog" target="”_blank”">Blog</router-link>
+    <router-link to="/" target="_blank">Home</router-link>
+    <router-link to="/events" target="_blank">Events</router-link>
+    <router-link to="/blog" target="_blank">Blog</router-link>
   </div>
 </template>
 
